@@ -1,3 +1,6 @@
+![CI](https://github.com/canyener/social-me-die-client/workflows/CI/badge.svg)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=canyener_social-me-die-client&metric=alert_status)](https://sonarcloud.io/dashboard?id=canyener_social-me-die-client)
+
 # social-me-die-client
 You can find API repository here: https://github.com/canyener/social-me-die
 
