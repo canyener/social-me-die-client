@@ -5,7 +5,9 @@
 ![GitHub](https://img.shields.io/github/license/canyener/social-me-die)
 
 # social-me-die-client
-You can find API repository here: https://github.com/canyener/social-me-die
+- You can find API repository [here](https://github.com/canyener/social-me-die).
+
+- `playground/` folder is committed for learning purposes but excluded from quality gate and coverage results  
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
