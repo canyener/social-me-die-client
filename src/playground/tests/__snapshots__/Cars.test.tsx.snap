@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render Cars correctly 1`] = `
+<div>
+  <ul>
+    <CarItem
+      car={
+        Object {
+          "color": "blue",
+          "model": "BMW",
+        }
+      }
+      key="BMW"
+    />
+    <CarItem
+      car={
+        Object {
+          "color": "red",
+          "model": "Mercedes",
+          "topSpeed": 100,
+        }
+      }
+      key="Mercedes"
+    />
+  </ul>
+</div>
+`;
