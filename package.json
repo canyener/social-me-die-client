@@ -44,7 +44,8 @@
     "coveragePathIgnorePatterns": [
       "./src/*/*.types.{ts,tsx}",
       "./src/index.tsx",
-      "./src/serviceWorker.ts"
+      "./src/serviceWorker.ts",
+      "<rootDir>/src/playground/"
     ],
     "coverageReporters": [
       "json",
