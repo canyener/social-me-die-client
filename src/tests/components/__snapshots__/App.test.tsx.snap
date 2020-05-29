@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should render App correctly 1`] = `
+exports[`Should render App correctly with default state 1`] = `
 <div
   className="App"
 >
@@ -12,21 +12,33 @@ exports[`Should render App correctly 1`] = `
       className="App-logo"
       src="logo.svg"
     />
-    <p>
-      Edit 
-      <code>
-        src/App.tsx
-      </code>
-       and save to reload.
-    </p>
-    <a
-      className="App-link"
-      href="https://reactjs.org"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      Learn React
-    </a>
+    <ul />
+  </header>
+</div>
+`;
+
+exports[`Should render App correctly with values 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="logo.svg"
+    />
+    <ul>
+      <li
+        key="1"
+      >
+        Value 1
+      </li>
+      <li
+        key="2"
+      />
+    </ul>
   </header>
 </div>
 `;
