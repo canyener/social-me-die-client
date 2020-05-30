@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should render App correctly with default state 1`] = `
+exports[`Should render App correctly 1`] = `
 <div
   className="App"
 >
@@ -17,7 +17,7 @@ exports[`Should render App correctly with default state 1`] = `
 </div>
 `;
 
-exports[`Should render App correctly with values 1`] = `
+exports[`Should render App correctly with data 1`] = `
 <div
   className="App"
 >
@@ -37,7 +37,14 @@ exports[`Should render App correctly with values 1`] = `
       </li>
       <li
         key="2"
-      />
+      >
+        Value 2
+      </li>
+      <li
+        key="3"
+      >
+        Value 3
+      </li>
     </ul>
   </header>
 </div>
