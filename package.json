@@ -18,6 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:coverage": "react-scripts test --coverage --runInBand --watchAll=false",
+    "watch:coverage": "react-scripts test --coverage --runInBand",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -46,7 +47,8 @@
       "./src/*/*.types.{ts,tsx}",
       "./src/index.tsx",
       "./src/serviceWorker.ts",
-      "<rootDir>/src/playground/"
+      "<rootDir>/src/playground/",
+      "<rootDir>/src/tests/fixtures/"
     ],
     "coverageReporters": [
       "json",
