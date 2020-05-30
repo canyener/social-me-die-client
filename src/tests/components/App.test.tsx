@@ -3,34 +3,16 @@ import { shallow } from 'enzyme'
 
 import App from '../../App'
 
-let wrapper: any
+const flushPromises = () => new Promise(resolve => setImmediate(resolve))
 
-beforeEach(() => {
-  wrapper = shallow(<App />)
-})
-
-test('Should render App correctly with default state', () => {
+test('Should render App correctly', () => {
+  const wrapper = shallow(<App />)
   expect(wrapper).toMatchSnapshot()
 })
 
-test('Should render App correctly with values', () => {
-  wrapper.instance().setState(() => ({
-    values: [{
-      id: 1,
-      name: 'Value 1'
-    }, {
-      id: 2, 
-      value: 'Value 2'
-    }]
-  }))
-
+test('Should render App correctly with data', async () => {
+  const wrapper = shallow(<App />)
+  await flushPromises()
+  wrapper.update()
   expect(wrapper).toMatchSnapshot()
 })
-
-test('Should set default state to empty array', () => {
-  const state = wrapper.instance().state
-  expect(state).toStrictEqual({
-    values: []
-  })
-})
-
