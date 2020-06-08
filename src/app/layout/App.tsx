@@ -5,12 +5,14 @@ import axios from 'axios'
 
 class App extends Component {
   state = {
-    values: []
+    activities: []
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/api/values').then(response => {
-      this.setState(() => ({ values: response.data }))
+    axios.get('http://localhost:5000/api/activities').then(response => {
+      this.setState(() => ({ 
+        activities: response.data 
+      }))
     })
   }
 
@@ -23,9 +25,9 @@ class App extends Component {
         </Header>
         <List>
           {
-            this.state.values.map((value: any) => 
-              <List.Item key={value.id}>
-                {value.name}
+            this.state.activities.map((activity: any) => 
+              <List.Item key={activity.id}>
+                {activity.title}
               </List.Item>)
           }
         </List>
