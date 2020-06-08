@@ -34,17 +34,12 @@ exports[`Should render App correctly with data 1`] = `
     <ListItem
       key="1"
     >
-      Value 1
+      Fake Activity 1
     </ListItem>
     <ListItem
       key="2"
     >
-      Value 2
-    </ListItem>
-    <ListItem
-      key="3"
-    >
-      Value 3
+      Fake Activity 2
     </ListItem>
   </List>
 </div>
