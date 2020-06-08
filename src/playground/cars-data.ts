@@ -1,6 +1,6 @@
 export interface ICar {
-  color: string,
-  model: string,
+  color: string
+  model: string
   topSpeed?:number
 }
 
