@@ -1,4 +1,4 @@
-import { fakeActivities, fakeValues } from '../fixtures/seed'
+import { fakeActivities, fakeValues } from '../../../tests/fixtures/seed'
 
 module.exports = {
   get: jest.fn((url) => {
