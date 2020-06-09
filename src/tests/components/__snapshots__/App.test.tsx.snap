@@ -1,46 +1,100 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should render App correctly 1`] = `
-<div>
-  <Header
-    as="h2"
-  >
-    <Icon
-      as="i"
-      name="users"
-    />
-    <HeaderContent>
-      Social Me Die
-    </HeaderContent>
-  </Header>
-  <List />
-</div>
+exports[`Should render App correctly when activities are fetched successfully 1`] = `
+<App>
+  <div>
+    <Header
+      as="h2"
+    >
+      <h2
+        className="ui header"
+      >
+        <Icon
+          as="i"
+          name="users"
+        >
+          <i
+            aria-hidden="true"
+            className="users icon"
+            onClick={[Function]}
+          />
+        </Icon>
+        <HeaderContent>
+          <div
+            className="content"
+          >
+            Social Me Die
+          </div>
+        </HeaderContent>
+      </h2>
+    </Header>
+    <List>
+      <div
+        className="ui list"
+        role="list"
+      >
+        <ListItem
+          key="1"
+        >
+          <div
+            className="item"
+            onClick={[Function]}
+            role="listitem"
+          >
+            Fake Activity 1
+          </div>
+        </ListItem>
+        <ListItem
+          key="2"
+        >
+          <div
+            className="item"
+            onClick={[Function]}
+            role="listitem"
+          >
+            Fake Activity 2
+          </div>
+        </ListItem>
+      </div>
+    </List>
+  </div>
+</App>
 `;
 
-exports[`Should render App correctly with data 1`] = `
-<div>
-  <Header
-    as="h2"
-  >
-    <Icon
-      as="i"
-      name="users"
-    />
-    <HeaderContent>
-      Social Me Die
-    </HeaderContent>
-  </Header>
-  <List>
-    <ListItem
-      key="1"
+exports[`Should render App correctly with empty activity list 1`] = `
+<App>
+  <div>
+    <Header
+      as="h2"
     >
-      Fake Activity 1
-    </ListItem>
-    <ListItem
-      key="2"
-    >
-      Fake Activity 2
-    </ListItem>
-  </List>
-</div>
+      <h2
+        className="ui header"
+      >
+        <Icon
+          as="i"
+          name="users"
+        >
+          <i
+            aria-hidden="true"
+            className="users icon"
+            onClick={[Function]}
+          />
+        </Icon>
+        <HeaderContent>
+          <div
+            className="content"
+          >
+            Social Me Die
+          </div>
+        </HeaderContent>
+      </h2>
+    </Header>
+    <List>
+      <div
+        className="ui list"
+        role="list"
+      />
+    </List>
+  </div>
+</App>
 `;
