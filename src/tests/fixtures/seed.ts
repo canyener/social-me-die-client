@@ -1,3 +1,5 @@
+import { IActivity } from "../../app/models/activity"
+
 const fakeValues = [{
   id: 1,
   name: 'Value 1'
@@ -9,12 +11,12 @@ const fakeValues = [{
   name: 'Value 3'
 }]
 
-const fakeActivities = [{
+const fakeActivities: IActivity[] = [{
   id: '1',
   title:'Fake Activity 1',
   category: 'Fake Category 1',
   city: 'Fake City',
-  date: '2020-01-01',
+  date: new Date(2020,1, 1),
   description: 'Fake description',
   venue: 'Fake Venue'
 },{
@@ -22,7 +24,7 @@ const fakeActivities = [{
   title:'Fake Activity 2',
   category: 'Fake Category 2',
   city: 'Fake City 2',
-  date: '2020-01-01',
+  date: new Date(2020,1,1),
   description: 'Fake description 2',
   venue: 'Fake Venue 2'
 }]
