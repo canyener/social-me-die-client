@@ -3,31 +3,90 @@
 exports[`Should render App correctly when activities are fetched successfully 1`] = `
 <App>
   <div>
-    <Header
-      as="h2"
-    >
-      <h2
-        className="ui header"
+    <Component>
+      <Menu
+        fixed="top"
+        inverted={true}
       >
-        <Icon
-          as="i"
-          name="users"
+        <div
+          className="ui inverted top fixed menu"
         >
-          <i
-            aria-hidden="true"
-            className="users icon"
-            onClick={[Function]}
-          />
-        </Icon>
-        <HeaderContent>
-          <div
-            className="content"
-          >
-            Social Me Die
-          </div>
-        </HeaderContent>
-      </h2>
-    </Header>
+          <Container>
+            <div
+              className="ui container"
+            >
+              <MenuItem
+                header={true}
+              >
+                <div
+                  className="header item"
+                  onClick={[Function]}
+                >
+                  <img
+                    alt="logo"
+                    src="/assets/logo.png"
+                  />
+                  Social Me Die
+                </div>
+              </MenuItem>
+              <MenuItem
+                name="Activities"
+              >
+                <div
+                  className="item"
+                  onClick={[Function]}
+                >
+                  Activities
+                </div>
+              </MenuItem>
+              <MenuItem>
+                <div
+                  className="item"
+                  onClick={[Function]}
+                >
+                  <Button
+                    as="button"
+                    content="Create Activity"
+                    positive={true}
+                  >
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui positive button"
+                          >
+                            Create Activity
+                          </button>,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui positive button"
+                            >
+                              Create Activity
+                            </button>,
+                          }
+                        }
+                      >
+                        <button
+                          className="ui positive button"
+                          onClick={[Function]}
+                        >
+                          Create Activity
+                        </button>
+                      </RefFindNode>
+                    </Ref>
+                  </Button>
+                </div>
+              </MenuItem>
+            </div>
+          </Container>
+        </div>
+      </Menu>
+    </Component>
     <List>
       <div
         className="ui list"
@@ -64,31 +123,90 @@ exports[`Should render App correctly when activities are fetched successfully 1`
 exports[`Should render App correctly with empty activity list 1`] = `
 <App>
   <div>
-    <Header
-      as="h2"
-    >
-      <h2
-        className="ui header"
+    <Component>
+      <Menu
+        fixed="top"
+        inverted={true}
       >
-        <Icon
-          as="i"
-          name="users"
+        <div
+          className="ui inverted top fixed menu"
         >
-          <i
-            aria-hidden="true"
-            className="users icon"
-            onClick={[Function]}
-          />
-        </Icon>
-        <HeaderContent>
-          <div
-            className="content"
-          >
-            Social Me Die
-          </div>
-        </HeaderContent>
-      </h2>
-    </Header>
+          <Container>
+            <div
+              className="ui container"
+            >
+              <MenuItem
+                header={true}
+              >
+                <div
+                  className="header item"
+                  onClick={[Function]}
+                >
+                  <img
+                    alt="logo"
+                    src="/assets/logo.png"
+                  />
+                  Social Me Die
+                </div>
+              </MenuItem>
+              <MenuItem
+                name="Activities"
+              >
+                <div
+                  className="item"
+                  onClick={[Function]}
+                >
+                  Activities
+                </div>
+              </MenuItem>
+              <MenuItem>
+                <div
+                  className="item"
+                  onClick={[Function]}
+                >
+                  <Button
+                    as="button"
+                    content="Create Activity"
+                    positive={true}
+                  >
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui positive button"
+                          >
+                            Create Activity
+                          </button>,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui positive button"
+                            >
+                              Create Activity
+                            </button>,
+                          }
+                        }
+                      >
+                        <button
+                          className="ui positive button"
+                          onClick={[Function]}
+                        >
+                          Create Activity
+                        </button>
+                      </RefFindNode>
+                    </Ref>
+                  </Button>
+                </div>
+              </MenuItem>
+            </div>
+          </Container>
+        </div>
+      </Menu>
+    </Component>
     <List>
       <div
         className="ui list"

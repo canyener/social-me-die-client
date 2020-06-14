@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render NavBar correctly 1`] = `
+<Menu
+  fixed="top"
+  inverted={true}
+>
+  <Container>
+    <MenuItem
+      header={true}
+    >
+      <img
+        alt="logo"
+        src="/assets/logo.png"
+      />
+      Social Me Die
+    </MenuItem>
+    <MenuItem
+      name="Activities"
+    />
+    <MenuItem>
+      <Button
+        as="button"
+        content="Create Activity"
+        positive={true}
+      />
+    </MenuItem>
+  </Container>
+</Menu>
+`;
