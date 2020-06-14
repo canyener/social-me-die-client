@@ -2,54 +2,69 @@
 
 exports[`Should render App correctly when activities are fetched successfully 1`] = `
 <App>
-  <div>
-    <Component>
-      <Menu
-        fixed="top"
-        inverted={true}
+  <Component>
+    <Menu
+      fixed="top"
+      inverted={true}
+    >
+      <div
+        className="ui inverted top fixed menu"
       >
-        <div
-          className="ui inverted top fixed menu"
-        >
-          <Container>
-            <div
-              className="ui container"
+        <Container>
+          <div
+            className="ui container"
+          >
+            <MenuItem
+              header={true}
             >
-              <MenuItem
-                header={true}
+              <div
+                className="header item"
+                onClick={[Function]}
               >
-                <div
-                  className="header item"
-                  onClick={[Function]}
-                >
-                  <img
-                    alt="logo"
-                    src="/assets/logo.png"
-                  />
-                  Social Me Die
-                </div>
-              </MenuItem>
-              <MenuItem
-                name="Activities"
+                <img
+                  alt="logo"
+                  src="/assets/logo.png"
+                  style={
+                    Object {
+                      "marginRight": "10px",
+                    }
+                  }
+                />
+                Social Me Die
+              </div>
+            </MenuItem>
+            <MenuItem
+              name="Activities"
+            >
+              <div
+                className="item"
+                onClick={[Function]}
               >
-                <div
-                  className="item"
-                  onClick={[Function]}
+                Activities
+              </div>
+            </MenuItem>
+            <MenuItem>
+              <div
+                className="item"
+                onClick={[Function]}
+              >
+                <Button
+                  as="button"
+                  content="Create Activity"
+                  positive={true}
                 >
-                  Activities
-                </div>
-              </MenuItem>
-              <MenuItem>
-                <div
-                  className="item"
-                  onClick={[Function]}
-                >
-                  <Button
-                    as="button"
-                    content="Create Activity"
-                    positive={true}
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui positive button"
+                        >
+                          Create Activity
+                        </button>,
+                      }
+                    }
                   >
-                    <Ref
+                    <RefFindNode
                       innerRef={
                         Object {
                           "current": <button
@@ -60,116 +75,136 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                         }
                       }
                     >
-                      <RefFindNode
-                        innerRef={
-                          Object {
-                            "current": <button
-                              class="ui positive button"
-                            >
-                              Create Activity
-                            </button>,
-                          }
-                        }
+                      <button
+                        className="ui positive button"
+                        onClick={[Function]}
                       >
-                        <button
-                          className="ui positive button"
-                          onClick={[Function]}
-                        >
-                          Create Activity
-                        </button>
-                      </RefFindNode>
-                    </Ref>
-                  </Button>
-                </div>
-              </MenuItem>
-            </div>
-          </Container>
-        </div>
-      </Menu>
-    </Component>
-    <List>
-      <div
-        className="ui list"
-        role="list"
-      >
-        <ListItem
-          key="1"
-        >
-          <div
-            className="item"
-            onClick={[Function]}
-            role="listitem"
-          >
-            Fake Activity 1
+                        Create Activity
+                      </button>
+                    </RefFindNode>
+                  </Ref>
+                </Button>
+              </div>
+            </MenuItem>
           </div>
-        </ListItem>
-        <ListItem
-          key="2"
-        >
-          <div
-            className="item"
-            onClick={[Function]}
-            role="listitem"
-          >
-            Fake Activity 2
-          </div>
-        </ListItem>
+        </Container>
       </div>
-    </List>
-  </div>
+    </Menu>
+  </Component>
+  <Container
+    style={
+      Object {
+        "marginTop": "7em",
+      }
+    }
+  >
+    <div
+      className="ui container"
+      style={
+        Object {
+          "marginTop": "7em",
+        }
+      }
+    >
+      <List>
+        <div
+          className="ui list"
+          role="list"
+        >
+          <ListItem
+            key="1"
+          >
+            <div
+              className="item"
+              onClick={[Function]}
+              role="listitem"
+            >
+              Fake Activity 1
+            </div>
+          </ListItem>
+          <ListItem
+            key="2"
+          >
+            <div
+              className="item"
+              onClick={[Function]}
+              role="listitem"
+            >
+              Fake Activity 2
+            </div>
+          </ListItem>
+        </div>
+      </List>
+    </div>
+  </Container>
 </App>
 `;
 
 exports[`Should render App correctly with empty activity list 1`] = `
 <App>
-  <div>
-    <Component>
-      <Menu
-        fixed="top"
-        inverted={true}
+  <Component>
+    <Menu
+      fixed="top"
+      inverted={true}
+    >
+      <div
+        className="ui inverted top fixed menu"
       >
-        <div
-          className="ui inverted top fixed menu"
-        >
-          <Container>
-            <div
-              className="ui container"
+        <Container>
+          <div
+            className="ui container"
+          >
+            <MenuItem
+              header={true}
             >
-              <MenuItem
-                header={true}
+              <div
+                className="header item"
+                onClick={[Function]}
               >
-                <div
-                  className="header item"
-                  onClick={[Function]}
-                >
-                  <img
-                    alt="logo"
-                    src="/assets/logo.png"
-                  />
-                  Social Me Die
-                </div>
-              </MenuItem>
-              <MenuItem
-                name="Activities"
+                <img
+                  alt="logo"
+                  src="/assets/logo.png"
+                  style={
+                    Object {
+                      "marginRight": "10px",
+                    }
+                  }
+                />
+                Social Me Die
+              </div>
+            </MenuItem>
+            <MenuItem
+              name="Activities"
+            >
+              <div
+                className="item"
+                onClick={[Function]}
               >
-                <div
-                  className="item"
-                  onClick={[Function]}
+                Activities
+              </div>
+            </MenuItem>
+            <MenuItem>
+              <div
+                className="item"
+                onClick={[Function]}
+              >
+                <Button
+                  as="button"
+                  content="Create Activity"
+                  positive={true}
                 >
-                  Activities
-                </div>
-              </MenuItem>
-              <MenuItem>
-                <div
-                  className="item"
-                  onClick={[Function]}
-                >
-                  <Button
-                    as="button"
-                    content="Create Activity"
-                    positive={true}
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui positive button"
+                        >
+                          Create Activity
+                        </button>,
+                      }
+                    }
                   >
-                    <Ref
+                    <RefFindNode
                       innerRef={
                         Object {
                           "current": <button
@@ -180,39 +215,44 @@ exports[`Should render App correctly with empty activity list 1`] = `
                         }
                       }
                     >
-                      <RefFindNode
-                        innerRef={
-                          Object {
-                            "current": <button
-                              class="ui positive button"
-                            >
-                              Create Activity
-                            </button>,
-                          }
-                        }
+                      <button
+                        className="ui positive button"
+                        onClick={[Function]}
                       >
-                        <button
-                          className="ui positive button"
-                          onClick={[Function]}
-                        >
-                          Create Activity
-                        </button>
-                      </RefFindNode>
-                    </Ref>
-                  </Button>
-                </div>
-              </MenuItem>
-            </div>
-          </Container>
-        </div>
-      </Menu>
-    </Component>
-    <List>
-      <div
-        className="ui list"
-        role="list"
-      />
-    </List>
-  </div>
+                        Create Activity
+                      </button>
+                    </RefFindNode>
+                  </Ref>
+                </Button>
+              </div>
+            </MenuItem>
+          </div>
+        </Container>
+      </div>
+    </Menu>
+  </Component>
+  <Container
+    style={
+      Object {
+        "marginTop": "7em",
+      }
+    }
+  >
+    <div
+      className="ui container"
+      style={
+        Object {
+          "marginTop": "7em",
+        }
+      }
+    >
+      <List>
+        <div
+          className="ui list"
+          role="list"
+        />
+      </List>
+    </div>
+  </Container>
 </App>
 `;
