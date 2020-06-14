@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { List } from 'semantic-ui-react'
+import React, { useState, useEffect, Fragment } from 'react'
+import { List, Container } from 'semantic-ui-react'
 
 import axios from 'axios'
 
@@ -17,19 +17,20 @@ const App = () => {
   }, [])
 
   return (
-    <div>
+    <Fragment>
       <NavBar />
-      <List>
-        {
-          activities.map((activity) =>
-            <List.Item key={activity.id}>
-              {activity.title}
-            </List.Item>)
-        }
-      </List>
-    </div>
+      <Container style={{ marginTop: '7em' }}>
+        <List>
+          {
+            activities.map((activity) =>
+              <List.Item key={activity.id}>
+                {activity.title}
+              </List.Item>)
+          }
+        </List>
+      </Container>
+    </Fragment>
   )
-
 }
 
 export default App

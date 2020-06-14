@@ -12,6 +12,11 @@ exports[`Should render NavBar correctly 1`] = `
       <img
         alt="logo"
         src="/assets/logo.png"
+        style={
+          Object {
+            "marginRight": "10px",
+          }
+        }
       />
       Social Me Die
     </MenuItem>
