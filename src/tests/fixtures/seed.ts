@@ -13,18 +13,18 @@ const fakeValues = [{
 
 const fakeActivities: IActivity[] = [{
   id: '1',
-  title:'Fake Activity 1',
+  title: 'Fake Activity 1',
   category: 'Fake Category 1',
   city: 'Fake City',
-  date: new Date(2020,1, 1),
+  date: new Date(2020, 0, 1, 1, 1, 1, 1),
   description: 'Fake description',
   venue: 'Fake Venue'
-},{
+}, {
   id: '2',
-  title:'Fake Activity 2',
+  title: 'Fake Activity 2',
   category: 'Fake Category 2',
   city: 'Fake City 2',
-  date: new Date(2020,1,1),
+  date: new Date(2020, 0, 1, 1, 1, 1, 1),
   description: 'Fake description 2',
   venue: 'Fake Venue 2'
 }]
