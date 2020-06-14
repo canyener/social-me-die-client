@@ -1,10 +1,11 @@
 import React, { useState, useEffect, Fragment } from 'react'
-import { List, Container } from 'semantic-ui-react'
+import { Container } from 'semantic-ui-react'
 
 import axios from 'axios'
 
 import { IActivity } from '../models/activity'
 import { NavBar } from '../../features/nav/NavBar'
+import { ActivityDashboard } from '../../features/activities/dashboard/ActivityDashboard'
 
 const App = () => {
 
@@ -20,14 +21,7 @@ const App = () => {
     <Fragment>
       <NavBar />
       <Container style={{ marginTop: '7em' }}>
-        <List>
-          {
-            activities.map((activity) =>
-              <List.Item key={activity.id}>
-                {activity.title}
-              </List.Item>)
-          }
-        </List>
+        <ActivityDashboard activities={activities} />
       </Container>
     </Fragment>
   )
