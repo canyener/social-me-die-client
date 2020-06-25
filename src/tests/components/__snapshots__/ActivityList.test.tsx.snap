@@ -17,7 +17,7 @@ exports[`Should render ActivityList correctly 1`] = `
           Fake Activity 1
         </ItemHeader>
         <ItemMeta>
-          Sun Sep 13 2020 15:26:40 GMT+0300 (GMT+03:00)
+          12/31/1969, 7:00:01 PM
         </ItemMeta>
         <ItemDescription>
           <div>
@@ -53,7 +53,7 @@ exports[`Should render ActivityList correctly 1`] = `
           Fake Activity 2
         </ItemHeader>
         <ItemMeta>
-          Sun Sep 13 2020 15:26:40 GMT+0300 (GMT+03:00)
+          12/31/1969, 7:00:01 PM
         </ItemMeta>
         <ItemDescription>
           <div>

@@ -112,7 +112,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
             Object {
               "category": "Fake Category 1",
               "city": "Fake City",
-              "date": 2020-09-13T12:26:40.000Z,
+              "date": 1970-01-01T00:00:01.000Z,
               "description": "Fake description",
               "id": "1",
               "title": "Fake Activity 1",
@@ -121,7 +121,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
             Object {
               "category": "Fake Category 2",
               "city": "Fake City 2",
-              "date": 2020-09-13T12:26:40.000Z,
+              "date": 1970-01-01T00:00:01.000Z,
               "description": "Fake description 2",
               "id": "2",
               "title": "Fake Activity 2",
@@ -146,7 +146,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                       Object {
                         "category": "Fake Category 1",
                         "city": "Fake City",
-                        "date": 2020-09-13T12:26:40.000Z,
+                        "date": 1970-01-01T00:00:01.000Z,
                         "description": "Fake description",
                         "id": "1",
                         "title": "Fake Activity 1",
@@ -155,7 +155,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                       Object {
                         "category": "Fake Category 2",
                         "city": "Fake City 2",
-                        "date": 2020-09-13T12:26:40.000Z,
+                        "date": 1970-01-01T00:00:01.000Z,
                         "description": "Fake description 2",
                         "id": "2",
                         "title": "Fake Activity 2",
@@ -199,7 +199,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                                     <div
                                       className="meta"
                                     >
-                                      Sun Sep 13 2020 15:26:40 GMT+0300 (GMT+03:00)
+                                      12/31/1969, 7:00:01 PM
                                     </div>
                                   </ItemMeta>
                                   <ItemDescription>
@@ -297,7 +297,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                                     <div
                                       className="meta"
                                     >
-                                      Sun Sep 13 2020 15:26:40 GMT+0300 (GMT+03:00)
+                                      12/31/1969, 7:00:01 PM
                                     </div>
                                   </ItemMeta>
                                   <ItemDescription>
