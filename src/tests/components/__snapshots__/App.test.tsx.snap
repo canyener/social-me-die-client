@@ -106,35 +106,282 @@ exports[`Should render App correctly when activities are fetched successfully 1`
         }
       }
     >
-      <List>
-        <div
-          className="ui list"
-          role="list"
-        >
-          <ListItem
-            key="1"
+      <Component
+        activities={
+          Array [
+            Object {
+              "category": "Fake Category 1",
+              "city": "Fake City",
+              "date": 1970-01-01T00:00:01.000Z,
+              "description": "Fake description",
+              "id": "1",
+              "title": "Fake Activity 1",
+              "venue": "Fake Venue",
+            },
+            Object {
+              "category": "Fake Category 2",
+              "city": "Fake City 2",
+              "date": 1970-01-01T00:00:01.000Z,
+              "description": "Fake description 2",
+              "id": "2",
+              "title": "Fake Activity 2",
+              "venue": "Fake Venue 2",
+            },
+          ]
+        }
+      >
+        <Grid>
+          <div
+            className="ui grid"
           >
-            <div
-              className="item"
-              onClick={[Function]}
-              role="listitem"
+            <GridColumn
+              width={10}
             >
-              Fake Activity 1
-            </div>
-          </ListItem>
-          <ListItem
-            key="2"
-          >
-            <div
-              className="item"
-              onClick={[Function]}
-              role="listitem"
-            >
-              Fake Activity 2
-            </div>
-          </ListItem>
-        </div>
-      </List>
+              <div
+                className="ten wide column"
+              >
+                <Component
+                  activities={
+                    Array [
+                      Object {
+                        "category": "Fake Category 1",
+                        "city": "Fake City",
+                        "date": 1970-01-01T00:00:01.000Z,
+                        "description": "Fake description",
+                        "id": "1",
+                        "title": "Fake Activity 1",
+                        "venue": "Fake Venue",
+                      },
+                      Object {
+                        "category": "Fake Category 2",
+                        "city": "Fake City 2",
+                        "date": 1970-01-01T00:00:01.000Z,
+                        "description": "Fake description 2",
+                        "id": "2",
+                        "title": "Fake Activity 2",
+                        "venue": "Fake Venue 2",
+                      },
+                    ]
+                  }
+                >
+                  <Segment
+                    clearing={true}
+                  >
+                    <div
+                      className="ui clearing segment"
+                    >
+                      <ItemGroup
+                        divided={true}
+                      >
+                        <div
+                          className="ui divided items"
+                        >
+                          <Item
+                            key="1"
+                          >
+                            <div
+                              className="item"
+                            >
+                              <ItemContent>
+                                <div
+                                  className="content"
+                                >
+                                  <ItemHeader
+                                    as="a"
+                                  >
+                                    <a
+                                      className="header"
+                                    >
+                                      Fake Activity 1
+                                    </a>
+                                  </ItemHeader>
+                                  <ItemMeta>
+                                    <div
+                                      className="meta"
+                                    >
+                                      12/31/1969, 7:00:01 PM
+                                    </div>
+                                  </ItemMeta>
+                                  <ItemDescription>
+                                    <div
+                                      className="description"
+                                    >
+                                      <div>
+                                        Fake description
+                                      </div>
+                                      <div>
+                                        Fake City
+                                        , 
+                                        Fake Venue
+                                      </div>
+                                    </div>
+                                  </ItemDescription>
+                                  <ItemExtra>
+                                    <div
+                                      className="extra"
+                                    >
+                                      <Button
+                                        as="button"
+                                        color="blue"
+                                        content="View"
+                                        floated="right"
+                                      >
+                                        <Ref
+                                          innerRef={
+                                            Object {
+                                              "current": <button
+                                                class="ui blue right floated button"
+                                              >
+                                                View
+                                              </button>,
+                                            }
+                                          }
+                                        >
+                                          <RefFindNode
+                                            innerRef={
+                                              Object {
+                                                "current": <button
+                                                  class="ui blue right floated button"
+                                                >
+                                                  View
+                                                </button>,
+                                              }
+                                            }
+                                          >
+                                            <button
+                                              className="ui blue right floated button"
+                                              onClick={[Function]}
+                                            >
+                                              View
+                                            </button>
+                                          </RefFindNode>
+                                        </Ref>
+                                      </Button>
+                                      <Label
+                                        basic={true}
+                                        content="Fake Category 1"
+                                      >
+                                        <div
+                                          className="ui basic label"
+                                          onClick={[Function]}
+                                        >
+                                          Fake Category 1
+                                        </div>
+                                      </Label>
+                                    </div>
+                                  </ItemExtra>
+                                </div>
+                              </ItemContent>
+                            </div>
+                          </Item>
+                          <Item
+                            key="2"
+                          >
+                            <div
+                              className="item"
+                            >
+                              <ItemContent>
+                                <div
+                                  className="content"
+                                >
+                                  <ItemHeader
+                                    as="a"
+                                  >
+                                    <a
+                                      className="header"
+                                    >
+                                      Fake Activity 2
+                                    </a>
+                                  </ItemHeader>
+                                  <ItemMeta>
+                                    <div
+                                      className="meta"
+                                    >
+                                      12/31/1969, 7:00:01 PM
+                                    </div>
+                                  </ItemMeta>
+                                  <ItemDescription>
+                                    <div
+                                      className="description"
+                                    >
+                                      <div>
+                                        Fake description 2
+                                      </div>
+                                      <div>
+                                        Fake City 2
+                                        , 
+                                        Fake Venue 2
+                                      </div>
+                                    </div>
+                                  </ItemDescription>
+                                  <ItemExtra>
+                                    <div
+                                      className="extra"
+                                    >
+                                      <Button
+                                        as="button"
+                                        color="blue"
+                                        content="View"
+                                        floated="right"
+                                      >
+                                        <Ref
+                                          innerRef={
+                                            Object {
+                                              "current": <button
+                                                class="ui blue right floated button"
+                                              >
+                                                View
+                                              </button>,
+                                            }
+                                          }
+                                        >
+                                          <RefFindNode
+                                            innerRef={
+                                              Object {
+                                                "current": <button
+                                                  class="ui blue right floated button"
+                                                >
+                                                  View
+                                                </button>,
+                                              }
+                                            }
+                                          >
+                                            <button
+                                              className="ui blue right floated button"
+                                              onClick={[Function]}
+                                            >
+                                              View
+                                            </button>
+                                          </RefFindNode>
+                                        </Ref>
+                                      </Button>
+                                      <Label
+                                        basic={true}
+                                        content="Fake Category 2"
+                                      >
+                                        <div
+                                          className="ui basic label"
+                                          onClick={[Function]}
+                                        >
+                                          Fake Category 2
+                                        </div>
+                                      </Label>
+                                    </div>
+                                  </ItemExtra>
+                                </div>
+                              </ItemContent>
+                            </div>
+                          </Item>
+                        </div>
+                      </ItemGroup>
+                    </div>
+                  </Segment>
+                </Component>
+              </div>
+            </GridColumn>
+          </div>
+        </Grid>
+      </Component>
     </div>
   </Container>
 </App>
@@ -246,12 +493,43 @@ exports[`Should render App correctly with empty activity list 1`] = `
         }
       }
     >
-      <List>
-        <div
-          className="ui list"
-          role="list"
-        />
-      </List>
+      <Component
+        activities={Array []}
+      >
+        <Grid>
+          <div
+            className="ui grid"
+          >
+            <GridColumn
+              width={10}
+            >
+              <div
+                className="ten wide column"
+              >
+                <Component
+                  activities={Array []}
+                >
+                  <Segment
+                    clearing={true}
+                  >
+                    <div
+                      className="ui clearing segment"
+                    >
+                      <ItemGroup
+                        divided={true}
+                      >
+                        <div
+                          className="ui divided items"
+                        />
+                      </ItemGroup>
+                    </div>
+                  </Segment>
+                </Component>
+              </div>
+            </GridColumn>
+          </div>
+        </Grid>
+      </Component>
     </div>
   </Container>
 </App>
