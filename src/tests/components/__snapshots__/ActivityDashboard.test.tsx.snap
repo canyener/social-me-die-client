@@ -11,7 +11,7 @@ exports[`Should render ActivityDashboard correctly 1`] = `
           Object {
             "category": "Fake Category 1",
             "city": "Fake City",
-            "date": 1970-01-01T00:00:01.000Z,
+            "date": 1970-01-01T00:00:10.000Z,
             "description": "Fake description",
             "id": "1",
             "title": "Fake Activity 1",
@@ -20,7 +20,7 @@ exports[`Should render ActivityDashboard correctly 1`] = `
           Object {
             "category": "Fake Category 2",
             "city": "Fake City 2",
-            "date": 1970-01-01T00:00:01.000Z,
+            "date": 1970-01-01T00:00:10.000Z,
             "description": "Fake description 2",
             "id": "2",
             "title": "Fake Activity 2",
