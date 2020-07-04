@@ -30,5 +30,10 @@ exports[`Should render ActivityDashboard correctly 1`] = `
       }
     />
   </GridColumn>
+  <GridColumn
+    width={6}
+  >
+    <Component />
+  </GridColumn>
 </Grid>
 `;
