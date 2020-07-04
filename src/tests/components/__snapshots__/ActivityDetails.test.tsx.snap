@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render ActivityDetails correctly 1`] = `
+<Card
+  fluid={true}
+>
+  <Image
+    as="img"
+    src="/assets/placeholder.png"
+    ui={false}
+    wrapped={true}
+  />
+  <CardContent>
+    <CardHeader>
+      Title
+    </CardHeader>
+    <CardMeta>
+      <span>
+        Date
+      </span>
+    </CardMeta>
+    <CardDescription>
+      Description
+    </CardDescription>
+  </CardContent>
+  <CardContent
+    extra={true}
+  >
+    <ButtonGroup
+      widths={2}
+    >
+      <Button
+        as="button"
+        basic={true}
+        color="blue"
+      >
+        Edit
+      </Button>
+      <Button
+        as="button"
+        basic={true}
+        color="grey"
+      >
+        Cancel
+      </Button>
+    </ButtonGroup>
+  </CardContent>
+</Card>
+`;
