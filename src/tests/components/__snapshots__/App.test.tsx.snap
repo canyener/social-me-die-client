@@ -199,7 +199,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                                     <div
                                       className="meta"
                                     >
-                                      12/31/1969, 7:00:01 PM
+                                      01.01.1970 02:00:01
                                     </div>
                                   </ItemMeta>
                                   <ItemDescription>
@@ -297,7 +297,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                                     <div
                                       className="meta"
                                     >
-                                      12/31/1969, 7:00:01 PM
+                                      01.01.1970 02:00:01
                                     </div>
                                   </ItemMeta>
                                   <ItemDescription>
