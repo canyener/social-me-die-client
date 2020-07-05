@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render ActivityForm correctly 1`] = `
+<Segment>
+  <Form
+    as="form"
+  >
+    <FormInput
+      as={[Function]}
+      control={[Function]}
+      placeholder="Title"
+    />
+    <FormTextArea
+      as={[Function]}
+      control={[Function]}
+      placeholder="Description"
+      rows={2}
+    />
+    <FormInput
+      as={[Function]}
+      control={[Function]}
+      placeholder="Category"
+    />
+    <FormInput
+      as={[Function]}
+      control={[Function]}
+      placeholder="Date"
+      type="date"
+    />
+    <FormInput
+      as={[Function]}
+      control={[Function]}
+      placeholder="City"
+    />
+    <FormInput
+      as={[Function]}
+      control={[Function]}
+      placeholder="Venue"
+    />
+  </Form>
+</Segment>
+`;
