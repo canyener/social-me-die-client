@@ -28,12 +28,25 @@ exports[`Should render ActivityDashboard correctly 1`] = `
           },
         ]
       }
+      selectActivity={[Function]}
     />
   </GridColumn>
   <GridColumn
     width={6}
   >
-    <Component />
+    <Component
+      activity={
+        Object {
+          "category": "Fake Category 1",
+          "city": "Fake City",
+          "date": 1970-01-01T00:00:01.000Z,
+          "description": "Fake description",
+          "id": "1",
+          "title": "Fake Activity 1",
+          "venue": "Fake Venue",
+        }
+      }
+    />
     <Component />
   </GridColumn>
 </Grid>
