@@ -2,7 +2,9 @@
 
 exports[`Should render App correctly when activities are fetched successfully 1`] = `
 <App>
-  <Component>
+  <Component
+    openCreateForm={[Function]}
+  >
     <Menu
       fixed="top"
       inverted={true}
@@ -51,6 +53,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                 <Button
                   as="button"
                   content="Create Activity"
+                  onClick={[Function]}
                   positive={true}
                 >
                   <Ref
@@ -403,7 +406,9 @@ exports[`Should render App correctly when activities are fetched successfully 1`
 
 exports[`Should render App correctly with empty activity list 1`] = `
 <App>
-  <Component>
+  <Component
+    openCreateForm={[Function]}
+  >
     <Menu
       fixed="top"
       inverted={true}
@@ -452,6 +457,7 @@ exports[`Should render App correctly with empty activity list 1`] = `
                 <Button
                   as="button"
                   content="Create Activity"
+                  onClick={[Function]}
                   positive={true}
                 >
                   <Ref
