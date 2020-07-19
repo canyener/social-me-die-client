@@ -27,6 +27,7 @@ exports[`Should render NavBar correctly 1`] = `
       <Button
         as="button"
         content="Create Activity"
+        onClick={[Function]}
         positive={true}
       />
     </MenuItem>
