@@ -27,3 +27,15 @@ test('Should render ActivityDashboard correctly with editMode equals to true', (
 
   expect(wrapper).toMatchSnapshot()
 })
+
+test('Should render ActivityDashboard correctly with edit mode false and selected activity is null', () => {
+  const wrapper = shallow(
+    <ActivityDashboard 
+      activities={fakeActivities} 
+      selectedActivity={null} 
+      selectActivity={() => {}}
+      editMode={false}
+      setEditMode={() => {}}  />)
+
+  expect(wrapper).toMatchSnapshot()
+})
