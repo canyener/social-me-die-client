@@ -6,21 +6,21 @@ exports[`Should render ActivityDetails correctly 1`] = `
 >
   <Image
     as="img"
-    src="/assets/placeholder.png"
+    src="/assets/categoryImages/Fake Category 1.jpg"
     ui={false}
     wrapped={true}
   />
   <CardContent>
     <CardHeader>
-      Title
+      Fake Activity 1
     </CardHeader>
     <CardMeta>
       <span>
-        Date
+        12/31/1969, 7:00:01 PM
       </span>
     </CardMeta>
     <CardDescription>
-      Description
+      Fake description
     </CardDescription>
   </CardContent>
   <CardContent

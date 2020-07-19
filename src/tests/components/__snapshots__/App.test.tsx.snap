@@ -129,6 +129,8 @@ exports[`Should render App correctly when activities are fetched successfully 1`
             },
           ]
         }
+        selectActivity={[Function]}
+        selectedActivity={null}
       >
         <Grid>
           <div
@@ -163,6 +165,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                       },
                     ]
                   }
+                  selectActivity={[Function]}
                 >
                   <Segment
                     clearing={true}
@@ -225,6 +228,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                                         color="blue"
                                         content="View"
                                         floated="right"
+                                        onClick={[Function]}
                                       >
                                         <Ref
                                           innerRef={
@@ -323,6 +327,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                                         color="blue"
                                         content="View"
                                         floated="right"
+                                        onClick={[Function]}
                                       >
                                         <Ref
                                           innerRef={
@@ -385,148 +390,6 @@ exports[`Should render App correctly when activities are fetched successfully 1`
               <div
                 className="six wide column"
               >
-                <Component>
-                  <Card
-                    fluid={true}
-                  >
-                    <div
-                      className="ui fluid card"
-                      onClick={[Function]}
-                    >
-                      <Image
-                        as="img"
-                        src="/assets/placeholder.png"
-                        ui={false}
-                        wrapped={true}
-                      >
-                        <div
-                          className="image"
-                        >
-                          <img
-                            src="/assets/placeholder.png"
-                          />
-                        </div>
-                      </Image>
-                      <CardContent>
-                        <div
-                          className="content"
-                        >
-                          <CardHeader>
-                            <div
-                              className="header"
-                            >
-                              Title
-                            </div>
-                          </CardHeader>
-                          <CardMeta>
-                            <div
-                              className="meta"
-                            >
-                              <span>
-                                Date
-                              </span>
-                            </div>
-                          </CardMeta>
-                          <CardDescription>
-                            <div
-                              className="description"
-                            >
-                              Description
-                            </div>
-                          </CardDescription>
-                        </div>
-                      </CardContent>
-                      <CardContent
-                        extra={true}
-                      >
-                        <div
-                          className="extra content"
-                        >
-                          <ButtonGroup
-                            widths={2}
-                          >
-                            <div
-                              className="ui two buttons"
-                            >
-                              <Button
-                                as="button"
-                                basic={true}
-                                color="blue"
-                              >
-                                <Ref
-                                  innerRef={
-                                    Object {
-                                      "current": <button
-                                        class="ui blue basic button"
-                                      >
-                                        Edit
-                                      </button>,
-                                    }
-                                  }
-                                >
-                                  <RefFindNode
-                                    innerRef={
-                                      Object {
-                                        "current": <button
-                                          class="ui blue basic button"
-                                        >
-                                          Edit
-                                        </button>,
-                                      }
-                                    }
-                                  >
-                                    <button
-                                      className="ui blue basic button"
-                                      onClick={[Function]}
-                                    >
-                                      Edit
-                                    </button>
-                                  </RefFindNode>
-                                </Ref>
-                              </Button>
-                              <Button
-                                as="button"
-                                basic={true}
-                                color="grey"
-                              >
-                                <Ref
-                                  innerRef={
-                                    Object {
-                                      "current": <button
-                                        class="ui grey basic button"
-                                      >
-                                        Cancel
-                                      </button>,
-                                    }
-                                  }
-                                >
-                                  <RefFindNode
-                                    innerRef={
-                                      Object {
-                                        "current": <button
-                                          class="ui grey basic button"
-                                        >
-                                          Cancel
-                                        </button>,
-                                      }
-                                    }
-                                  >
-                                    <button
-                                      className="ui grey basic button"
-                                      onClick={[Function]}
-                                    >
-                                      Cancel
-                                    </button>
-                                  </RefFindNode>
-                                </Ref>
-                              </Button>
-                            </div>
-                          </ButtonGroup>
-                        </div>
-                      </CardContent>
-                    </div>
-                  </Card>
-                </Component>
                 <Component>
                   <Segment>
                     <div
@@ -872,6 +735,8 @@ exports[`Should render App correctly with empty activity list 1`] = `
     >
       <Component
         activities={Array []}
+        selectActivity={[Function]}
+        selectedActivity={null}
       >
         <Grid>
           <div
@@ -885,6 +750,7 @@ exports[`Should render App correctly with empty activity list 1`] = `
               >
                 <Component
                   activities={Array []}
+                  selectActivity={[Function]}
                 >
                   <Segment
                     clearing={true}
@@ -910,148 +776,6 @@ exports[`Should render App correctly with empty activity list 1`] = `
               <div
                 className="six wide column"
               >
-                <Component>
-                  <Card
-                    fluid={true}
-                  >
-                    <div
-                      className="ui fluid card"
-                      onClick={[Function]}
-                    >
-                      <Image
-                        as="img"
-                        src="/assets/placeholder.png"
-                        ui={false}
-                        wrapped={true}
-                      >
-                        <div
-                          className="image"
-                        >
-                          <img
-                            src="/assets/placeholder.png"
-                          />
-                        </div>
-                      </Image>
-                      <CardContent>
-                        <div
-                          className="content"
-                        >
-                          <CardHeader>
-                            <div
-                              className="header"
-                            >
-                              Title
-                            </div>
-                          </CardHeader>
-                          <CardMeta>
-                            <div
-                              className="meta"
-                            >
-                              <span>
-                                Date
-                              </span>
-                            </div>
-                          </CardMeta>
-                          <CardDescription>
-                            <div
-                              className="description"
-                            >
-                              Description
-                            </div>
-                          </CardDescription>
-                        </div>
-                      </CardContent>
-                      <CardContent
-                        extra={true}
-                      >
-                        <div
-                          className="extra content"
-                        >
-                          <ButtonGroup
-                            widths={2}
-                          >
-                            <div
-                              className="ui two buttons"
-                            >
-                              <Button
-                                as="button"
-                                basic={true}
-                                color="blue"
-                              >
-                                <Ref
-                                  innerRef={
-                                    Object {
-                                      "current": <button
-                                        class="ui blue basic button"
-                                      >
-                                        Edit
-                                      </button>,
-                                    }
-                                  }
-                                >
-                                  <RefFindNode
-                                    innerRef={
-                                      Object {
-                                        "current": <button
-                                          class="ui blue basic button"
-                                        >
-                                          Edit
-                                        </button>,
-                                      }
-                                    }
-                                  >
-                                    <button
-                                      className="ui blue basic button"
-                                      onClick={[Function]}
-                                    >
-                                      Edit
-                                    </button>
-                                  </RefFindNode>
-                                </Ref>
-                              </Button>
-                              <Button
-                                as="button"
-                                basic={true}
-                                color="grey"
-                              >
-                                <Ref
-                                  innerRef={
-                                    Object {
-                                      "current": <button
-                                        class="ui grey basic button"
-                                      >
-                                        Cancel
-                                      </button>,
-                                    }
-                                  }
-                                >
-                                  <RefFindNode
-                                    innerRef={
-                                      Object {
-                                        "current": <button
-                                          class="ui grey basic button"
-                                        >
-                                          Cancel
-                                        </button>,
-                                      }
-                                    }
-                                  >
-                                    <button
-                                      className="ui grey basic button"
-                                      onClick={[Function]}
-                                    >
-                                      Cancel
-                                    </button>
-                                  </RefFindNode>
-                                </Ref>
-                              </Button>
-                            </div>
-                          </ButtonGroup>
-                        </div>
-                      </CardContent>
-                    </div>
-                  </Card>
-                </Component>
                 <Component>
                   <Segment>
                     <div

@@ -8,15 +8,19 @@ import { ActivityForm } from '../form/ActivityForm'
 
 interface IProps {
   activities: IActivity[]
+  selectedActivity: IActivity | null
+  selectActivity: (id: string) => void
 }
 
-export const ActivityDashboard: React.FC<IProps> = ({ activities }) => (
+export const ActivityDashboard: React.FC<IProps> = ({ activities, selectedActivity, selectActivity }) => (
   <Grid>
     <Grid.Column width={10}>
-      <ActivityList activities={activities} />
+      <ActivityList activities={activities} selectActivity={selectActivity} />
     </Grid.Column>
     <Grid.Column width={6}>
-      <ActivityDetails />
+      {
+        selectedActivity && <ActivityDetails activity={selectedActivity} />
+      }
       <ActivityForm />
     </Grid.Column>
   </Grid>
