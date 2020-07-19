@@ -33,6 +33,7 @@ exports[`Should render ActivityDetails correctly 1`] = `
         as="button"
         basic={true}
         color="blue"
+        onClick={[Function]}
       >
         Edit
       </Button>

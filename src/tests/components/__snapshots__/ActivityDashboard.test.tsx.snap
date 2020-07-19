@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should render ActivityDashboard correctly 1`] = `
+exports[`Should render ActivityDashboard correctly with editMode equals to false 1`] = `
 <Grid>
   <GridColumn
     width={10}
@@ -46,7 +46,46 @@ exports[`Should render ActivityDashboard correctly 1`] = `
           "venue": "Fake Venue",
         }
       }
+      setEditMode={[Function]}
     />
+  </GridColumn>
+</Grid>
+`;
+
+exports[`Should render ActivityDashboard correctly with editMode equals to true 1`] = `
+<Grid>
+  <GridColumn
+    width={10}
+  >
+    <Component
+      activities={
+        Array [
+          Object {
+            "category": "Fake Category 1",
+            "city": "Fake City",
+            "date": 1970-01-01T00:00:01.000Z,
+            "description": "Fake description",
+            "id": "1",
+            "title": "Fake Activity 1",
+            "venue": "Fake Venue",
+          },
+          Object {
+            "category": "Fake Category 2",
+            "city": "Fake City 2",
+            "date": 1970-01-01T00:00:01.000Z,
+            "description": "Fake description 2",
+            "id": "2",
+            "title": "Fake Activity 2",
+            "venue": "Fake Venue 2",
+          },
+        ]
+      }
+      selectActivity={[Function]}
+    />
+  </GridColumn>
+  <GridColumn
+    width={6}
+  >
     <Component />
   </GridColumn>
 </Grid>
