@@ -1,8 +1,7 @@
 import React from 'react'
-import { shallow, mount } from 'enzyme'
+import { shallow } from 'enzyme'
 
 import { NavBar } from '../../features/nav/NavBar'
-import App from '../../app/layout/App'
 
 test('Should render NavBar correctly', () => {
   const wrapper = shallow(<NavBar openCreateForm={()=> {}} />)
