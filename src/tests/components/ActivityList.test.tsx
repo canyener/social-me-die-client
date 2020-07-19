@@ -19,19 +19,19 @@ test('Should call selectActivity once when button is clicked', () => {
 })
 
 
-test('useStateTest', () => {
-  const setState = jest.fn()
-  const useStateMock: any = (initialState: any) => [initialState, setState]
+// test('useStateTest', () => {
+//   const setState = jest.fn()
+//   const useStateMock: any = (initialState: any) => [initialState, setState]
 
-  jest.spyOn(React, 'useState').mockImplementation(useStateMock)
+//   jest.spyOn(React, 'useState').mockImplementation(useStateMock)
 
-  //how to trigger useState handler function here?
+//   //how to trigger useState handler function here?
 
-  const wrapper = mount(<ActivityList activities={fakeActivities} selectActivity={() => { }}/>)
+//   const wrapper = mount(<ActivityList activities={fakeActivities} selectActivity={() => { }}/>)
 
-  wrapper.find('Button').first().simulate('click')
+//   wrapper.find('Button').first().simulate('click')
 
-  wrapper.update()
+//   wrapper.update()
 
-  expect(setState).toHaveBeenCalledTimes(1)
-})
+//   expect(setState).toHaveBeenCalledTimes(1)
+// })
