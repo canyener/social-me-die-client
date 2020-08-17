@@ -41,6 +41,7 @@ exports[`Should render ActivityDetails correctly 1`] = `
         as="button"
         basic={true}
         color="grey"
+        onClick={[Function]}
       >
         Cancel
       </Button>
