@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render ActivityForm correctly 1`] = `
-<Segment>
+<Segment
+  clearing={true}
+>
   <Form
     as="form"
   >
@@ -36,6 +38,20 @@ exports[`Should render ActivityForm correctly 1`] = `
       as={[Function]}
       control={[Function]}
       placeholder="Venue"
+    />
+    <Button
+      as="button"
+      content="Submit"
+      floated="right"
+      positive={true}
+      type="submit"
+    />
+    <Button
+      as="button"
+      content="Cancel"
+      floated="right"
+      onClick={[Function]}
+      type="button"
     />
   </Form>
 </Segment>

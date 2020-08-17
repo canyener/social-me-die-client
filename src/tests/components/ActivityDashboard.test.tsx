@@ -11,7 +11,10 @@ test('Should render ActivityDashboard correctly with editMode equals to false', 
       selectedActivity={fakeActivities[0]} 
       selectActivity={() => {}}
       editMode={false}
-      setEditMode={() => {}}  />)
+      setEditMode={() => {}}  
+      setSelectedActivity = {() => {}}
+      />
+    )
 
   expect(wrapper).toMatchSnapshot()
 })
@@ -23,7 +26,10 @@ test('Should render ActivityDashboard correctly with editMode equals to true', (
       selectedActivity={fakeActivities[0]} 
       selectActivity={() => {}}
       editMode={true}
-      setEditMode={() => {}}  />)
+      setEditMode={() => {}}
+      setSelectedActivity = {() => {}}
+    />
+  )
 
   expect(wrapper).toMatchSnapshot()
 })
@@ -35,7 +41,10 @@ test('Should render ActivityDashboard correctly with edit mode false and selecte
       selectedActivity={null} 
       selectActivity={() => {}}
       editMode={false}
-      setEditMode={() => {}}  />)
+      setEditMode={() => {}}  
+      setSelectedActivity = {() => {}}
+    />
+  )
 
   expect(wrapper).toMatchSnapshot()
 })

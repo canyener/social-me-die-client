@@ -84,6 +84,7 @@ exports[`Should render ActivityDashboard correctly with editMode equals to false
         }
       }
       setEditMode={[Function]}
+      setSelectedActivity={[Function]}
     />
   </GridColumn>
 </Grid>
@@ -123,7 +124,9 @@ exports[`Should render ActivityDashboard correctly with editMode equals to true 
   <GridColumn
     width={6}
   >
-    <Component />
+    <Component
+      setEditMode={[Function]}
+    />
   </GridColumn>
 </Grid>
 `;

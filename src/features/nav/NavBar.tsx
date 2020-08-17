@@ -11,7 +11,7 @@ export const NavBar: React.FC<IProps> = ({ openCreateForm }) => (
       <Menu.Item header>
         <img src="/assets/logo.png" alt="logo" style={{ marginRight: '10px' }} />
           Social Me Die
-        </Menu.Item>
+      </Menu.Item>
       <Menu.Item name='Activities' />
       <Menu.Item>
         <Button onClick={openCreateForm} positive content='Create Activity' />
