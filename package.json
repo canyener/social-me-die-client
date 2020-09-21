@@ -86,6 +86,6 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.4",
     "jest-enzyme": "^7.1.2",
-    "ts-jest": "^26.3.0"
+    "ts-jest": "^26.4.0"
   }
 }
