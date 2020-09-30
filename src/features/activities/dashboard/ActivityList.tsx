@@ -16,7 +16,7 @@ export const ActivityList: React.FC<IProps> = ({ activities, selectActivity }) =
           <Item key={activity.id}>
             <Item.Content>
               <Item.Header as='a'>{activity.title}</Item.Header>
-              <Item.Meta>{activity.date.toLocaleString("en-US", { timeZone: "America/New_York" })}</Item.Meta>
+              <Item.Meta>{activity.date}</Item.Meta>
               <Item.Description>
                 <div>{activity.description}</div>
                 <div>{activity.city}, {activity.venue}</div>

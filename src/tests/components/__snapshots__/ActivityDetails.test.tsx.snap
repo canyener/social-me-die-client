@@ -16,7 +16,7 @@ exports[`Should render ActivityDetails correctly 1`] = `
     </CardHeader>
     <CardMeta>
       <span>
-        12/31/1969, 7:00:01 PM
+        01.01.2020
       </span>
     </CardMeta>
     <CardDescription>

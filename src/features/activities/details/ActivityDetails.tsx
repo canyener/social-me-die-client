@@ -19,7 +19,7 @@ export const ActivityDetails: React.FC<IProps> = ({
     <Card.Content>
       <Card.Header>{activity.title}</Card.Header>
       <Card.Meta>
-        <span>{activity.date.toLocaleString("en-US", { timeZone: "America/New_York" })}</span>
+        <span>{activity.date}</span>
       </Card.Meta>
       <Card.Description>
         {activity.description}
