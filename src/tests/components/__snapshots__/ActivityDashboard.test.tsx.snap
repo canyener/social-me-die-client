@@ -11,7 +11,7 @@ exports[`Should render ActivityDashboard correctly with edit mode false and sele
           Object {
             "category": "Fake Category 1",
             "city": "Fake City",
-            "date": 1970-01-01T00:00:01.000Z,
+            "date": "01.01.2020",
             "description": "Fake description",
             "id": "1",
             "title": "Fake Activity 1",
@@ -20,7 +20,7 @@ exports[`Should render ActivityDashboard correctly with edit mode false and sele
           Object {
             "category": "Fake Category 2",
             "city": "Fake City 2",
-            "date": 1970-01-01T00:00:01.000Z,
+            "date": "01.01.2020",
             "description": "Fake description 2",
             "id": "2",
             "title": "Fake Activity 2",
@@ -48,7 +48,7 @@ exports[`Should render ActivityDashboard correctly with editMode equals to false
           Object {
             "category": "Fake Category 1",
             "city": "Fake City",
-            "date": 1970-01-01T00:00:01.000Z,
+            "date": "01.01.2020",
             "description": "Fake description",
             "id": "1",
             "title": "Fake Activity 1",
@@ -57,7 +57,7 @@ exports[`Should render ActivityDashboard correctly with editMode equals to false
           Object {
             "category": "Fake Category 2",
             "city": "Fake City 2",
-            "date": 1970-01-01T00:00:01.000Z,
+            "date": "01.01.2020",
             "description": "Fake description 2",
             "id": "2",
             "title": "Fake Activity 2",
@@ -76,7 +76,7 @@ exports[`Should render ActivityDashboard correctly with editMode equals to false
         Object {
           "category": "Fake Category 1",
           "city": "Fake City",
-          "date": 1970-01-01T00:00:01.000Z,
+          "date": "01.01.2020",
           "description": "Fake description",
           "id": "1",
           "title": "Fake Activity 1",
@@ -101,7 +101,7 @@ exports[`Should render ActivityDashboard correctly with editMode equals to true 
           Object {
             "category": "Fake Category 1",
             "city": "Fake City",
-            "date": 1970-01-01T00:00:01.000Z,
+            "date": "01.01.2020",
             "description": "Fake description",
             "id": "1",
             "title": "Fake Activity 1",
@@ -110,7 +110,7 @@ exports[`Should render ActivityDashboard correctly with editMode equals to true 
           Object {
             "category": "Fake Category 2",
             "city": "Fake City 2",
-            "date": 1970-01-01T00:00:01.000Z,
+            "date": "01.01.2020",
             "description": "Fake description 2",
             "id": "2",
             "title": "Fake Activity 2",
@@ -125,6 +125,17 @@ exports[`Should render ActivityDashboard correctly with editMode equals to true 
     width={6}
   >
     <Component
+      activity={
+        Object {
+          "category": "Fake Category 1",
+          "city": "Fake City",
+          "date": "01.01.2020",
+          "description": "Fake description",
+          "id": "1",
+          "title": "Fake Activity 1",
+          "venue": "Fake Venue",
+        }
+      }
       setEditMode={[Function]}
     />
   </GridColumn>

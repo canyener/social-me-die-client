@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should render ActivityForm correctly 1`] = `
+exports[`Should render ActivityForm correctly when activity prop is null 1`] = `
 <Segment
   clearing={true}
 >
@@ -11,33 +11,102 @@ exports[`Should render ActivityForm correctly 1`] = `
       as={[Function]}
       control={[Function]}
       placeholder="Title"
+      value=""
     />
     <FormTextArea
       as={[Function]}
       control={[Function]}
       placeholder="Description"
       rows={2}
+      value=""
     />
     <FormInput
       as={[Function]}
       control={[Function]}
       placeholder="Category"
+      value=""
     />
     <FormInput
       as={[Function]}
       control={[Function]}
       placeholder="Date"
       type="date"
+      value=""
     />
     <FormInput
       as={[Function]}
       control={[Function]}
       placeholder="City"
+      value=""
     />
     <FormInput
       as={[Function]}
       control={[Function]}
       placeholder="Venue"
+      value=""
+    />
+    <Button
+      as="button"
+      content="Submit"
+      floated="right"
+      positive={true}
+      type="submit"
+    />
+    <Button
+      as="button"
+      content="Cancel"
+      floated="right"
+      onClick={[Function]}
+      type="button"
+    />
+  </Form>
+</Segment>
+`;
+
+exports[`Should render ActivityForm correctly with given activity 1`] = `
+<Segment
+  clearing={true}
+>
+  <Form
+    as="form"
+  >
+    <FormInput
+      as={[Function]}
+      control={[Function]}
+      placeholder="Title"
+      value="Fake Activity 1"
+    />
+    <FormTextArea
+      as={[Function]}
+      control={[Function]}
+      placeholder="Description"
+      rows={2}
+      value="Fake description"
+    />
+    <FormInput
+      as={[Function]}
+      control={[Function]}
+      placeholder="Category"
+      value="Fake Category 1"
+    />
+    <FormInput
+      as={[Function]}
+      control={[Function]}
+      placeholder="Date"
+      type="date"
+      value="01.01.2020"
+    />
+    <FormInput
+      as={[Function]}
+      control={[Function]}
+      placeholder="City"
+      value="Fake City"
+    />
+    <FormInput
+      as={[Function]}
+      control={[Function]}
+      placeholder="Venue"
+      value="Fake Venue"
     />
     <Button
       as="button"
