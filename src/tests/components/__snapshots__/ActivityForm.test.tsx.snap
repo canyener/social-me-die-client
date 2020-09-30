@@ -10,12 +10,16 @@ exports[`Should render ActivityForm correctly when activity prop is null 1`] = `
     <FormInput
       as={[Function]}
       control={[Function]}
+      name="title"
+      onChange={[Function]}
       placeholder="Title"
       value=""
     />
     <FormTextArea
       as={[Function]}
       control={[Function]}
+      name="description"
+      onChange={[Function]}
       placeholder="Description"
       rows={2}
       value=""
@@ -23,12 +27,16 @@ exports[`Should render ActivityForm correctly when activity prop is null 1`] = `
     <FormInput
       as={[Function]}
       control={[Function]}
+      name="category"
+      onChange={[Function]}
       placeholder="Category"
       value=""
     />
     <FormInput
       as={[Function]}
       control={[Function]}
+      name="date"
+      onChange={[Function]}
       placeholder="Date"
       type="date"
       value=""
@@ -36,12 +44,16 @@ exports[`Should render ActivityForm correctly when activity prop is null 1`] = `
     <FormInput
       as={[Function]}
       control={[Function]}
+      name="city"
+      onChange={[Function]}
       placeholder="City"
       value=""
     />
     <FormInput
       as={[Function]}
       control={[Function]}
+      name="venue"
+      onChange={[Function]}
       placeholder="Venue"
       value=""
     />
@@ -73,12 +85,16 @@ exports[`Should render ActivityForm correctly with given activity 1`] = `
     <FormInput
       as={[Function]}
       control={[Function]}
+      name="title"
+      onChange={[Function]}
       placeholder="Title"
       value="Fake Activity 1"
     />
     <FormTextArea
       as={[Function]}
       control={[Function]}
+      name="description"
+      onChange={[Function]}
       placeholder="Description"
       rows={2}
       value="Fake description"
@@ -86,12 +102,16 @@ exports[`Should render ActivityForm correctly with given activity 1`] = `
     <FormInput
       as={[Function]}
       control={[Function]}
+      name="category"
+      onChange={[Function]}
       placeholder="Category"
       value="Fake Category 1"
     />
     <FormInput
       as={[Function]}
       control={[Function]}
+      name="date"
+      onChange={[Function]}
       placeholder="Date"
       type="date"
       value="01.01.2020"
@@ -99,12 +119,16 @@ exports[`Should render ActivityForm correctly with given activity 1`] = `
     <FormInput
       as={[Function]}
       control={[Function]}
+      name="city"
+      onChange={[Function]}
       placeholder="City"
       value="Fake City"
     />
     <FormInput
       as={[Function]}
       control={[Function]}
+      name="venue"
+      onChange={[Function]}
       placeholder="Venue"
       value="Fake Venue"
     />
