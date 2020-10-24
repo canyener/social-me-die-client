@@ -6,6 +6,7 @@ exports[`Should render ActivityForm correctly when activity prop is null 1`] = `
 >
   <Form
     as="form"
+    onSubmit={[Function]}
   >
     <FormInput
       as={[Function]}
@@ -81,6 +82,7 @@ exports[`Should render ActivityForm correctly with given activity 1`] = `
 >
   <Form
     as="form"
+    onSubmit={[Function]}
   >
     <FormInput
       as={[Function]}
