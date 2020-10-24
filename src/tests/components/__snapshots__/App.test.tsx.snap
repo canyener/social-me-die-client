@@ -132,6 +132,8 @@ exports[`Should render App correctly when activities are fetched successfully 1`
             },
           ]
         }
+        createActivity={[Function]}
+        editActivity={[Function]}
         editMode={false}
         selectActivity={[Function]}
         selectedActivity={null}
@@ -516,6 +518,8 @@ exports[`Should render App correctly with empty activity list 1`] = `
     >
       <Component
         activities={Array []}
+        createActivity={[Function]}
+        editActivity={[Function]}
         editMode={false}
         selectActivity={[Function]}
         selectedActivity={null}

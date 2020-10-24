@@ -136,6 +136,8 @@ exports[`Should render ActivityDashboard correctly with editMode equals to true 
           "venue": "Fake Venue",
         }
       }
+      createActivity={[Function]}
+      editActivity={[Function]}
       setEditMode={[Function]}
     />
   </GridColumn>
