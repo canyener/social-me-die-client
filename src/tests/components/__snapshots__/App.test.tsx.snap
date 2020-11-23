@@ -2,7 +2,7 @@
 
 exports[`Should render App correctly when activities are fetched successfully 1`] = `
 <App>
-  <Component
+  <NavBar
     openCreateForm={[Function]}
   >
     <Menu
@@ -93,7 +93,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
         </Container>
       </div>
     </Menu>
-  </Component>
+  </NavBar>
   <Container
     style={
       Object {
@@ -109,7 +109,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
         }
       }
     >
-      <Component
+      <ActivityDashboard
         activities={
           Array [
             Object {
@@ -150,7 +150,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
               <div
                 className="ten wide column"
               >
-                <Component
+                <ActivityList
                   activities={
                     Array [
                       Object {
@@ -389,7 +389,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                       </ItemGroup>
                     </div>
                   </Segment>
-                </Component>
+                </ActivityList>
               </div>
             </GridColumn>
             <GridColumn
@@ -401,7 +401,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
             </GridColumn>
           </div>
         </Grid>
-      </Component>
+      </ActivityDashboard>
     </div>
   </Container>
 </App>
@@ -409,7 +409,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
 
 exports[`Should render App correctly with empty activity list 1`] = `
 <App>
-  <Component
+  <NavBar
     openCreateForm={[Function]}
   >
     <Menu
@@ -500,7 +500,7 @@ exports[`Should render App correctly with empty activity list 1`] = `
         </Container>
       </div>
     </Menu>
-  </Component>
+  </NavBar>
   <Container
     style={
       Object {
@@ -516,7 +516,7 @@ exports[`Should render App correctly with empty activity list 1`] = `
         }
       }
     >
-      <Component
+      <ActivityDashboard
         activities={Array []}
         createActivity={[Function]}
         editActivity={[Function]}
@@ -536,7 +536,7 @@ exports[`Should render App correctly with empty activity list 1`] = `
               <div
                 className="ten wide column"
               >
-                <Component
+                <ActivityList
                   activities={Array []}
                   selectActivity={[Function]}
                 >
@@ -555,7 +555,7 @@ exports[`Should render App correctly with empty activity list 1`] = `
                       </ItemGroup>
                     </div>
                   </Segment>
-                </Component>
+                </ActivityList>
               </div>
             </GridColumn>
             <GridColumn
@@ -567,7 +567,7 @@ exports[`Should render App correctly with empty activity list 1`] = `
             </GridColumn>
           </div>
         </Grid>
-      </Component>
+      </ActivityDashboard>
     </div>
   </Container>
 </App>
