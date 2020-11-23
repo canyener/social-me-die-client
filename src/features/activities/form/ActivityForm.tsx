@@ -10,7 +10,7 @@ interface IProps {
   editActivity: (activity: IActivity) => void
 }
 
-export const ActivityForm: React.FC<IProps> = ({
+const ActivityForm: React.FC<IProps> = ({
   setEditMode,
   activity: initialFormState,
   createActivity,
@@ -97,3 +97,7 @@ export const ActivityForm: React.FC<IProps> = ({
     </Segment>
   )
 }
+
+ActivityForm.displayName = 'ActivityForm'
+
+export { ActivityForm }

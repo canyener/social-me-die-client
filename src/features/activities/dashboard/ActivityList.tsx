@@ -8,7 +8,7 @@ interface IProps {
   selectActivity: (id: string) => void
 }
 
-export const ActivityList: React.FC<IProps> = ({ activities, selectActivity }) => (
+const ActivityList: React.FC<IProps> = ({ activities, selectActivity }) => (
   <Segment clearing>
     <Item.Group divided>
       {
@@ -37,3 +37,7 @@ export const ActivityList: React.FC<IProps> = ({ activities, selectActivity }) =
     </Item.Group>
   </Segment>
 )
+
+ActivityList.displayName = 'ActivityList'
+
+export { ActivityList }

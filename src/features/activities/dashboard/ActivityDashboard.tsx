@@ -17,7 +17,7 @@ interface IProps {
   editActivity: (activity: IActivity) => void
 }
 
-export const ActivityDashboard: React.FC<IProps> = ({
+const ActivityDashboard: React.FC<IProps> = ({
   activities,
   selectedActivity,
   selectActivity,
@@ -54,3 +54,7 @@ export const ActivityDashboard: React.FC<IProps> = ({
       </Grid.Column>
     </Grid>
   )
+
+  ActivityDashboard.displayName = 'ActivityDashboard'
+
+  export { ActivityDashboard }
