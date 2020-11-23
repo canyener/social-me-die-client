@@ -5,7 +5,7 @@ exports[`Should render ActivityDashboard correctly with edit mode false and sele
   <GridColumn
     width={10}
   >
-    <Component
+    <ActivityList
       activities={
         Array [
           Object {
@@ -42,7 +42,7 @@ exports[`Should render ActivityDashboard correctly with editMode equals to false
   <GridColumn
     width={10}
   >
-    <Component
+    <ActivityList
       activities={
         Array [
           Object {
@@ -71,7 +71,7 @@ exports[`Should render ActivityDashboard correctly with editMode equals to false
   <GridColumn
     width={6}
   >
-    <Component
+    <ActivityDetails
       activity={
         Object {
           "category": "Fake Category 1",
@@ -95,7 +95,7 @@ exports[`Should render ActivityDashboard correctly with editMode equals to true 
   <GridColumn
     width={10}
   >
-    <Component
+    <ActivityList
       activities={
         Array [
           Object {
@@ -124,7 +124,7 @@ exports[`Should render ActivityDashboard correctly with editMode equals to true 
   <GridColumn
     width={6}
   >
-    <Component
+    <ActivityForm
       activity={
         Object {
           "category": "Fake Category 1",
