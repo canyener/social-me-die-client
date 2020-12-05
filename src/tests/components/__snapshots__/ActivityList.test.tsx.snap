@@ -37,6 +37,13 @@ exports[`Should render ActivityList correctly 1`] = `
             floated="right"
             onClick={[Function]}
           />
+          <Button
+            as="button"
+            color="red"
+            content="Delete"
+            floated="right"
+            onClick={[Function]}
+          />
           <Label
             basic={true}
             content="Fake Category 1"
@@ -71,6 +78,13 @@ exports[`Should render ActivityList correctly 1`] = `
             as="button"
             color="blue"
             content="View"
+            floated="right"
+            onClick={[Function]}
+          />
+          <Button
+            as="button"
+            color="red"
+            content="Delete"
             floated="right"
             onClick={[Function]}
           />
