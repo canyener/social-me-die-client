@@ -16,7 +16,7 @@ const fakeActivities: IActivity[] = [{
   title: 'Fake Activity 1',
   category: 'Fake Category 1',
   city: 'Fake City',
-  date: '01.01.2020',
+  date: '2020-02-02T16:16:16',
   description: 'Fake description',
   venue: 'Fake Venue'
 }, {
@@ -24,7 +24,7 @@ const fakeActivities: IActivity[] = [{
   title: 'Fake Activity 2',
   category: 'Fake Category 2',
   city: 'Fake City 2',
-  date: '01.01.2020',
+  date: '2020-02-02T16:16:16',
   description: 'Fake description 2',
   venue: 'Fake Venue 2'
 }]

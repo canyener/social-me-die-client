@@ -39,7 +39,7 @@ exports[`Should render ActivityForm correctly when activity prop is null 1`] = `
       name="date"
       onChange={[Function]}
       placeholder="Date"
-      type="date"
+      type="datetime-local"
       value=""
     />
     <FormInput
@@ -115,8 +115,8 @@ exports[`Should render ActivityForm correctly with given activity 1`] = `
       name="date"
       onChange={[Function]}
       placeholder="Date"
-      type="date"
-      value="01.01.2020"
+      type="datetime-local"
+      value="2020-02-02T16:16:16"
     />
     <FormInput
       as={[Function]}
