@@ -15,6 +15,7 @@ test('Should render ActivityDashboard correctly with editMode equals to false', 
       setSelectedActivity={() => { }}
       createActivity={() => { }}
       editActivity={() => { }}
+      deleteActivity={() => { }}
     />
   )
 
@@ -32,6 +33,7 @@ test('Should render ActivityDashboard correctly with editMode equals to true', (
       setSelectedActivity={() => { }}
       createActivity={() => { }}
       editActivity={() => { }}
+      deleteActivity={() => { }}
     />
   )
 
@@ -49,6 +51,7 @@ test('Should render ActivityDashboard correctly with edit mode false and selecte
       setSelectedActivity={() => { }}
       createActivity={() => { }}
       editActivity={() => { }}
+      deleteActivity={() => { }}
     />
   )
 
