@@ -28,6 +28,7 @@ exports[`Should render ActivityDashboard correctly with edit mode false and sele
           },
         ]
       }
+      deleteActivity={[Function]}
       selectActivity={[Function]}
     />
   </GridColumn>
@@ -65,6 +66,7 @@ exports[`Should render ActivityDashboard correctly with editMode equals to false
           },
         ]
       }
+      deleteActivity={[Function]}
       selectActivity={[Function]}
     />
   </GridColumn>
@@ -118,6 +120,7 @@ exports[`Should render ActivityDashboard correctly with editMode equals to true 
           },
         ]
       }
+      deleteActivity={[Function]}
       selectActivity={[Function]}
     />
   </GridColumn>
