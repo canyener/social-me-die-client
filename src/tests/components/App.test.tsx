@@ -6,13 +6,29 @@ import { act } from 'react-dom/test-utils'
 import { fakeActivities } from '../fixtures/seed'
 
 import App from '../../app/layout/App'
+import agent from '../../app/api/agent'
 
 afterAll(() => {
   jest.restoreAllMocks()
 })
 
+ jest.mock('axios', () => {
+    return {
+      get: jest.fn(),
+      defaults: {
+        baseURL: 'http://localhost:5000/api'
+      },
+    };
+  });
+
 test('Should render App correctly when activities are fetched successfully', async () => {
+ 
   const fakeAxiosResponse = { data: fakeActivities }
+
+  //const mockedAxios = axios as jest.Mocked<typeof axios>
+  // mockedAxios.get.mockResolvedValue(fakeAxiosResponse)
+  // return agent.Activities.list().then(data => expect(data).toEqual(fakeActivities))
+
   jest.spyOn(axios, 'get').mockResolvedValueOnce(fakeAxiosResponse)
 
   const wrapper = mount(<App />)
