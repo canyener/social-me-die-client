@@ -5,6 +5,8 @@ import App from '../App'
 
 const flushPromises = () => new Promise(resolve => setImmediate(resolve))
 
+//const mockedAxios = axios as jest.Mocked<typeof axios>
+
 test('Should render App correctly', () => {
   const wrapper = shallow(<App />)
   expect(wrapper).toMatchSnapshot()
