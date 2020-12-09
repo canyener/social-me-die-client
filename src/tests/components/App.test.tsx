@@ -25,10 +25,6 @@ test('Should render App correctly when activities are fetched successfully', asy
  
   const fakeAxiosResponse = { data: fakeActivities }
 
-  //const mockedAxios = axios as jest.Mocked<typeof axios>
-  // mockedAxios.get.mockResolvedValue(fakeAxiosResponse)
-  // return agent.Activities.list().then(data => expect(data).toEqual(fakeActivities))
-
   jest.spyOn(axios, 'get').mockResolvedValueOnce(fakeAxiosResponse)
 
   const wrapper = mount(<App />)
