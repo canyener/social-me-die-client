@@ -11,8 +11,19 @@ afterAll(() => {
   jest.restoreAllMocks()
 })
 
+ jest.mock('axios', () => {
+    return {
+      get: jest.fn(),
+      defaults: {
+        baseURL: 'http://localhost:5000/api'
+      },
+    };
+  });
+
 test('Should render App correctly when activities are fetched successfully', async () => {
+ 
   const fakeAxiosResponse = { data: fakeActivities }
+
   jest.spyOn(axios, 'get').mockResolvedValueOnce(fakeAxiosResponse)
 
   const wrapper = mount(<App />)
