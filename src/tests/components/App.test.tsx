@@ -6,7 +6,6 @@ import { act } from 'react-dom/test-utils'
 import { fakeActivities } from '../fixtures/seed'
 
 import App from '../../app/layout/App'
-import agent from '../../app/api/agent'
 
 afterAll(() => {
   jest.restoreAllMocks()
