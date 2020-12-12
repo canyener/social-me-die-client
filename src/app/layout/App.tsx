@@ -32,13 +32,17 @@ const App = () => {
   }
 
   const handleEditActivity = (activity: IActivity) => {
-    setActivities([...activities.filter(item => item.id !== activity.id), activity])
-    setSelectedActivity(activity)
-    setEditMode(false)
+    agent.Activities.update(activity).then(() => {
+      setActivities([...activities.filter(item => item.id !== activity.id), activity])
+      setSelectedActivity(activity)
+      setEditMode(false)
+    })
   }
 
   const handleDeleteActivity = (id: string) => {
-    setActivities([...activities.filter(activity => activity.id !== id)])
+    agent.Activities.delete(id).then(() => {
+      setActivities([...activities.filter(activity => activity.id !== id)])
+    })
   }
 
   useEffect(() => {
