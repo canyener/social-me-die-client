@@ -24,9 +24,11 @@ const App = () => {
   }
 
   const handleCreateActivity = (activity: IActivity) => {
-    setActivities([...activities, activity])
-    setSelectedActivity(activity)
-    setEditMode(false)
+    agent.Activities.create(activity).then(() => {
+      setActivities([...activities, activity])
+      setSelectedActivity(activity)
+      setEditMode(false)
+    })
   }
 
   const handleEditActivity = (activity: IActivity) => {
@@ -43,14 +45,14 @@ const App = () => {
     agent.Activities.list()
       .then(response => {
         let activities: IActivity[] = []
-      
+
         response.forEach((activity) => {
           activity.date = activity.date.split('.')[0]
           activities.push(activity)
         })
 
-      setActivities(activities)
-    })
+        setActivities(activities)
+      })
   }, [])
 
   return (
