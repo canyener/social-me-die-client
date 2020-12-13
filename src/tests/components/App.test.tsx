@@ -29,7 +29,7 @@ test('Should render App correctly when activities are fetched successfully', asy
   const wrapper = mount(<App />)
 
   await act(async () => {
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+    await new Promise((resolve) => setTimeout(resolve, 1100))
   })
 
   wrapper.update()
@@ -44,10 +44,24 @@ test('Should render App correctly with empty activity list', async () => {
   const wrapper = mount(<App />)
 
   await act(async () => {
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+    await new Promise((resolve) => setTimeout(resolve, 1100))
   })
 
   wrapper.update()
 
   expect(wrapper).toMatchSnapshot()
+})
+
+test('Should render LoadingComponent until data is fetched', async () => {
+  const fakeAxiosResponse = { data: []}
+  jest.spyOn(axios, 'get').mockResolvedValueOnce(fakeAxiosResponse)
+  
+  const wrapper = mount(<App />)
+
+  await act(async () => {
+    await new Promise((resolve) => setTimeout(resolve, 500))
+  })
+
+  expect(wrapper).toMatchSnapshot()
+
 })
