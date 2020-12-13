@@ -12,6 +12,7 @@ test('Should render ActivityForm correctly when activity prop is null', () => {
       activity={null}
       createActivity={() => { }}
       editActivity={() => { }}
+      submitting={false}
     />
   )
 
@@ -25,6 +26,7 @@ test('Should render ActivityForm correctly with given activity', () => {
       activity={fakeActivities[0]}
       createActivity={() => { }}
       editActivity={() => { }}
+      submitting={false}
     />
   )
 
@@ -40,6 +42,7 @@ test('Should call setEditMode with false when Cancel button is clicked ', () => 
       activity={fakeActivities[0]}
       createActivity={() => { }}
       editActivity={() => { }}
+      submitting={false}
     />
   )
 

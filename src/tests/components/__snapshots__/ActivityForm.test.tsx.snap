@@ -62,6 +62,7 @@ exports[`Should render ActivityForm correctly when activity prop is null 1`] = `
       as="button"
       content="Submit"
       floated="right"
+      loading={false}
       positive={true}
       type="submit"
     />
@@ -138,6 +139,7 @@ exports[`Should render ActivityForm correctly with given activity 1`] = `
       as="button"
       content="Submit"
       floated="right"
+      loading={false}
       positive={true}
       type="submit"
     />
