@@ -29,7 +29,7 @@ test('Should render App correctly when activities are fetched successfully', asy
   const wrapper = mount(<App />)
 
   await act(async () => {
-    await new Promise((resolve) => setTimeout(resolve, 0))
+    await new Promise((resolve) => setTimeout(resolve, 1000))
   })
 
   wrapper.update()
@@ -44,7 +44,7 @@ test('Should render App correctly with empty activity list', async () => {
   const wrapper = mount(<App />)
 
   await act(async () => {
-    await new Promise((resolve) => setTimeout(resolve, 0))
+    await new Promise((resolve) => setTimeout(resolve, 1000))
   })
 
   wrapper.update()
