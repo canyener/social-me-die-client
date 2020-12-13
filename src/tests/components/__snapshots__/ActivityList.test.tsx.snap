@@ -42,6 +42,8 @@ exports[`Should render ActivityList correctly 1`] = `
             color="red"
             content="Delete"
             floated="right"
+            loading={false}
+            name="1"
             onClick={[Function]}
           />
           <Label
@@ -86,6 +88,8 @@ exports[`Should render ActivityList correctly 1`] = `
             color="red"
             content="Delete"
             floated="right"
+            loading={false}
+            name="2"
             onClick={[Function]}
           />
           <Label

@@ -10,7 +10,10 @@ test('Should render ActivityList correctly', () => {
       activities={fakeActivities}
       selectActivity={() => { }}
       deleteActivity={() => { }}
-    />)
+      submitting={false}
+      target=''
+    />
+  )
 
   expect(wrapper).toMatchSnapshot()
 })
@@ -23,7 +26,11 @@ test('Should call selectActivity once when button is clicked', () => {
       activities={fakeActivities}
       selectActivity={selectActivitySpy}
       deleteActivity={() => { }}
-    />)
+      submitting={false}
+      target=''
+    />
+  )
+
   wrapper.find('Button').first().simulate('click')
   expect(selectActivitySpy).toHaveBeenCalledTimes(1)
 })
@@ -35,8 +42,11 @@ test('Should call deleteActivity once when delete button is clicked', () => {
       activities={fakeActivities}
       selectActivity={() => { }}
       deleteActivity={deleteActivitySpy}
-    />)
+      submitting={false}
+      target=''
+    />
+  )
 
-    wrapper.find('Button').at(1).simulate('click')
-    expect(deleteActivitySpy).toHaveBeenCalledTimes(1)
+  wrapper.find('Button').at(1).simulate('click')
+  expect(deleteActivitySpy).toHaveBeenCalledTimes(1)
 })

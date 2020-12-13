@@ -140,6 +140,8 @@ exports[`Should render App correctly when activities are fetched successfully 1`
         selectedActivity={null}
         setEditMode={[Function]}
         setSelectedActivity={[Function]}
+        submitting={false}
+        target=""
       >
         <Grid>
           <div
@@ -176,6 +178,8 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                   }
                   deleteActivity={[Function]}
                   selectActivity={[Function]}
+                  submitting={false}
+                  target=""
                 >
                   <Segment
                     clearing={true}
@@ -276,6 +280,8 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                                         color="red"
                                         content="Delete"
                                         floated="right"
+                                        loading={false}
+                                        name="1"
                                         onClick={[Function]}
                                       >
                                         <Ref
@@ -283,6 +289,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                                             Object {
                                               "current": <button
                                                 class="ui red right floated button"
+                                                name="1"
                                               >
                                                 Delete
                                               </button>,
@@ -294,6 +301,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                                               Object {
                                                 "current": <button
                                                   class="ui red right floated button"
+                                                  name="1"
                                                 >
                                                   Delete
                                                 </button>,
@@ -302,6 +310,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                                           >
                                             <button
                                               className="ui red right floated button"
+                                              name="1"
                                               onClick={[Function]}
                                             >
                                               Delete
@@ -413,6 +422,8 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                                         color="red"
                                         content="Delete"
                                         floated="right"
+                                        loading={false}
+                                        name="2"
                                         onClick={[Function]}
                                       >
                                         <Ref
@@ -420,6 +431,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                                             Object {
                                               "current": <button
                                                 class="ui red right floated button"
+                                                name="2"
                                               >
                                                 Delete
                                               </button>,
@@ -431,6 +443,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                                               Object {
                                                 "current": <button
                                                   class="ui red right floated button"
+                                                  name="2"
                                                 >
                                                   Delete
                                                 </button>,
@@ -439,6 +452,7 @@ exports[`Should render App correctly when activities are fetched successfully 1`
                                           >
                                             <button
                                               className="ui red right floated button"
+                                              name="2"
                                               onClick={[Function]}
                                             >
                                               Delete
@@ -604,6 +618,8 @@ exports[`Should render App correctly with empty activity list 1`] = `
         selectedActivity={null}
         setEditMode={[Function]}
         setSelectedActivity={[Function]}
+        submitting={false}
+        target=""
       >
         <Grid>
           <div
@@ -619,6 +635,8 @@ exports[`Should render App correctly with empty activity list 1`] = `
                   activities={Array []}
                   deleteActivity={[Function]}
                   selectActivity={[Function]}
+                  submitting={false}
+                  target=""
                 >
                   <Segment
                     clearing={true}
