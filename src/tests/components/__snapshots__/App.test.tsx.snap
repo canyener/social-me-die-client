@@ -652,3 +652,82 @@ exports[`Should render App correctly with empty activity list 1`] = `
   </Container>
 </App>
 `;
+
+exports[`Should render LoadingComponent until data is fetched 1`] = `
+<App>
+  <LoadingComponent
+    content="Loading Activities..."
+  >
+    <Dimmer
+      active={true}
+      inverted={true}
+    >
+      <DimmerInner
+        active={true}
+        inverted={true}
+      >
+        <Ref
+          innerRef={
+            Object {
+              "current": <div
+                class="ui active transition visible inverted dimmer"
+                style="display: flex;"
+              >
+                <div
+                  class="content"
+                >
+                  <div
+                    class="ui text loader"
+                  >
+                    Loading Activities...
+                  </div>
+                </div>
+              </div>,
+            }
+          }
+        >
+          <RefFindNode
+            innerRef={
+              Object {
+                "current": <div
+                  class="ui active transition visible inverted dimmer"
+                  style="display: flex;"
+                >
+                  <div
+                    class="content"
+                  >
+                    <div
+                      class="ui text loader"
+                    >
+                      Loading Activities...
+                    </div>
+                  </div>
+                </div>,
+              }
+            }
+          >
+            <div
+              className="ui active transition visible inverted dimmer"
+              onClick={[Function]}
+            >
+              <div
+                className="content"
+              >
+                <Loader
+                  content="Loading Activities..."
+                >
+                  <div
+                    className="ui text loader"
+                  >
+                    Loading Activities...
+                  </div>
+                </Loader>
+              </div>
+            </div>
+          </RefFindNode>
+        </Ref>
+      </DimmerInner>
+    </Dimmer>
+  </LoadingComponent>
+</App>
+`;
