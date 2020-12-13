@@ -39,6 +39,9 @@
     ]
   },
   "jest": {
+    "watchPathIgnorePatterns": [
+      "<rootDir>/src/playground/"
+    ],
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
       "!src/**/*.d.ts",
