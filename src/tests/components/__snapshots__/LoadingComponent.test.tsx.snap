@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render LoadingComponent correctly with given inverted and content props 1`] = `
+<Dimmer
+  active={true}
+  inverted={true}
+>
+  <Loader
+    content="Loading stuff"
+  />
+</Dimmer>
+`;
+
+exports[`Should render LoadingComponent correctly without any given props 1`] = `
+<Dimmer
+  active={true}
+>
+  <Loader />
+</Dimmer>
+`;
