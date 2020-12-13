@@ -50,14 +50,14 @@ const App = () => {
   useEffect(() => {
     agent.Activities.list()
       .then(response => {
-        let activities: IActivity[] = []
+        let activityList: IActivity[] = []
 
         response.forEach((activity) => {
           activity.date = activity.date.split('.')[0]
-          activities.push(activity)
+          activityList.push(activity)
         })
 
-        setActivities(activities)
+        setActivities(activityList)
       })
       .then(() => setLoading(false))
   }, [])
