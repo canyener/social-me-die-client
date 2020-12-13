@@ -6,7 +6,7 @@ import LoadingComponent from '../../app/layout/LoadingComponent'
 test('Should render LoadingComponent correctly with given inverted and content props', () => {
   const wrapper = shallow(
     <LoadingComponent 
-      inverted={true}
+      inverted={false}
       content="Loading stuff"
     />
   )
@@ -14,7 +14,7 @@ test('Should render LoadingComponent correctly with given inverted and content p
   expect(wrapper).toMatchSnapshot()
 })
 
-test('Should render LoadingComponent correctly without any given props', () => {
+test('Should render LoadingComponent with inverted as true and no content without any given props', () => {
   const wrapper = shallow(
     <LoadingComponent />
   )

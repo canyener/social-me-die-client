@@ -3,7 +3,7 @@
 exports[`Should render LoadingComponent correctly with given inverted and content props 1`] = `
 <Dimmer
   active={true}
-  inverted={true}
+  inverted={false}
 >
   <Loader
     content="Loading stuff"
@@ -11,9 +11,10 @@ exports[`Should render LoadingComponent correctly with given inverted and conten
 </Dimmer>
 `;
 
-exports[`Should render LoadingComponent correctly without any given props 1`] = `
+exports[`Should render LoadingComponent with inverted as true and no content without any given props 1`] = `
 <Dimmer
   active={true}
+  inverted={true}
 >
   <Loader />
 </Dimmer>
