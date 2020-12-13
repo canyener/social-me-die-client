@@ -656,7 +656,7 @@ exports[`Should render App correctly with empty activity list 1`] = `
 exports[`Should render LoadingComponent until data is fetched 1`] = `
 <App>
   <LoadingComponent
-    content="Loading Activities...."
+    content="Loading Activities..."
   >
     <Dimmer
       active={true}
@@ -679,7 +679,7 @@ exports[`Should render LoadingComponent until data is fetched 1`] = `
                   <div
                     class="ui text loader"
                   >
-                    Loading Activities....
+                    Loading Activities...
                   </div>
                 </div>
               </div>,
@@ -699,7 +699,7 @@ exports[`Should render LoadingComponent until data is fetched 1`] = `
                     <div
                       class="ui text loader"
                     >
-                      Loading Activities....
+                      Loading Activities...
                     </div>
                   </div>
                 </div>,
@@ -714,12 +714,12 @@ exports[`Should render LoadingComponent until data is fetched 1`] = `
                 className="content"
               >
                 <Loader
-                  content="Loading Activities...."
+                  content="Loading Activities..."
                 >
                   <div
                     className="ui text loader"
                   >
-                    Loading Activities....
+                    Loading Activities...
                   </div>
                 </Loader>
               </div>

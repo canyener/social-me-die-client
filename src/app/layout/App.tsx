@@ -62,7 +62,7 @@ const App = () => {
       .then(() => setLoading(false))
   }, [])
 
-  if(loading) return <LoadingComponent content="Loading Activities...."/>
+  if(loading) return <LoadingComponent content="Loading Activities..."/>
 
   return (
     <Fragment>
