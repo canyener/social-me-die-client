@@ -1,19 +1,23 @@
-import React, { useState, useEffect, Fragment, SyntheticEvent } from 'react'
+import React, { useState, useEffect, Fragment, SyntheticEvent, useContext } from 'react'
 import { Container } from 'semantic-ui-react'
+import { observer } from 'mobx-react-lite'
 
 import { IActivity } from '../models/activity'
-import { NavBar } from '../../features/nav/NavBar'
-import { ActivityDashboard } from '../../features/activities/dashboard/ActivityDashboard'
 
-import agent from '../api/agent'
+import { NavBar } from '../../features/nav/NavBar'
+import ActivityDashboard from '../../features/activities/dashboard/ActivityDashboard'
 import LoadingComponent from './LoadingComponent'
+
+import { Activities } from '../api/agent'
+
+import ActivityStore from '../stores/activityStore'
 
 const App = () => {
 
+  const activityStore = useContext(ActivityStore)
   const [activities, setActivities] = useState<IActivity[]>([])
   const [selectedActivity, setSelectedActivity] = useState<IActivity | null>(null)
   const [editMode, setEditMode] = useState(false)
-  const [loading, setLoading] = useState(true)
   const [submitting, setSubmitting] = useState(false)
   const [target, setTarget] = useState('')
 
@@ -29,7 +33,7 @@ const App = () => {
 
   const handleCreateActivity = (activity: IActivity) => {
     setSubmitting(true)
-    agent.Activities.create(activity).then(() => {
+    Activities.create(activity).then(() => {
       setActivities([...activities, activity])
       setSelectedActivity(activity)
       setEditMode(false)
@@ -39,7 +43,7 @@ const App = () => {
 
   const handleEditActivity = (activity: IActivity) => {
     setSubmitting(true)
-    agent.Activities.update(activity).then(() => {
+    Activities.update(activity).then(() => {
       setActivities([...activities.filter(item => item.id !== activity.id), activity])
       setSelectedActivity(activity)
       setEditMode(false)
@@ -50,35 +54,24 @@ const App = () => {
   const handleDeleteActivity = (event: SyntheticEvent<HTMLButtonElement>, id: string) => {
     setSubmitting(true)
     setTarget(event.currentTarget.name)
-    agent.Activities.delete(id).then(() => {
+    Activities.delete(id).then(() => {
       setActivities([...activities.filter(activity => activity.id !== id)])
     })
       .then(() => setSubmitting(false))
   }
 
   useEffect(() => {
-    agent.Activities.list()
-      .then(response => {
-        let activityList: IActivity[] = []
+    activityStore.loadActivities()
+  }, [activityStore])
 
-        response.forEach((activity) => {
-          activity.date = activity.date.split('.')[0]
-          activityList.push(activity)
-        })
-
-        setActivities(activityList)
-      })
-      .then(() => setLoading(false))
-  }, [])
-
-  if (loading) return <LoadingComponent content="Loading Activities..." />
+  if (activityStore.loadingInitial) return <LoadingComponent content="Loading Activities..." />
 
   return (
     <Fragment>
       <NavBar openCreateForm={handleOpenCreateForm} />
       <Container style={{ marginTop: '7em' }}>
         <ActivityDashboard
-          activities={activities}
+          activities={activityStore.activities}
           selectActivity={handleSelectActivity}
           selectedActivity={selectedActivity}
           editMode={editMode}
@@ -95,4 +88,4 @@ const App = () => {
   )
 }
 
-export default App
+export default observer(App)
