@@ -8,7 +8,7 @@ import { NavBar } from '../../features/nav/NavBar'
 import ActivityDashboard from '../../features/activities/dashboard/ActivityDashboard'
 import LoadingComponent from './LoadingComponent'
 
-import { Activities } from '../api/agent'
+import agent from '../api/agent'
 
 import ActivityStore from '../stores/activityStore'
 
@@ -33,7 +33,7 @@ const App = () => {
 
   const handleCreateActivity = (activity: IActivity) => {
     setSubmitting(true)
-    Activities.create(activity).then(() => {
+    agent.Activities.create(activity).then(() => {
       setActivities([...activities, activity])
       setSelectedActivity(activity)
       setEditMode(false)
@@ -43,7 +43,7 @@ const App = () => {
 
   const handleEditActivity = (activity: IActivity) => {
     setSubmitting(true)
-    Activities.update(activity).then(() => {
+    agent.Activities.update(activity).then(() => {
       setActivities([...activities.filter(item => item.id !== activity.id), activity])
       setSelectedActivity(activity)
       setEditMode(false)
@@ -54,7 +54,7 @@ const App = () => {
   const handleDeleteActivity = (event: SyntheticEvent<HTMLButtonElement>, id: string) => {
     setSubmitting(true)
     setTarget(event.currentTarget.name)
-    Activities.delete(id).then(() => {
+    agent.Activities.delete(id).then(() => {
       setActivities([...activities.filter(activity => activity.id !== id)])
     })
       .then(() => setSubmitting(false))

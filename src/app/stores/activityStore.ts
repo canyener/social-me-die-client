@@ -2,9 +2,10 @@ import { makeObservable, observable, action } from "mobx"
 import { createContext } from 'react'
 
 import { IActivity } from "../models/activity"
-import { Activities } from '../api/agent'
+import agent from '../api/agent'
 
 class ActivityStore {
+
   constructor() {
     makeObservable(this)
   }
@@ -15,14 +16,14 @@ class ActivityStore {
   @action loadActivities = () => {
     this.loadingInitial = true
 
-    Activities.list()
+    agent.Activities.list()
       .then(activityList => {
 
         activityList.forEach((activity) => {
           activity.date = activity.date.split('.')[0]
           this.activities.push(activity)
         })
-      })
+      })      
       .finally(() => this.loadingInitial = false)
   }
 }
