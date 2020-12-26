@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import { ActivityDashboard } from '../../features/activities/dashboard/ActivityDashboard'
+import  ActivityDashboard  from '../../features/activities/dashboard/ActivityDashboard'
 import { fakeActivities } from '../fixtures/seed'
 
 test('Should render ActivityDashboard correctly with editMode equals to false', () => {
