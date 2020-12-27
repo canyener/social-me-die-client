@@ -14,6 +14,7 @@ class ActivityStore {
   @observable selectedActivity: IActivity | undefined
   @observable loadingInitial = false
   @observable editMode = false
+  @observable submitting = false
 
   @action loadActivities = async () => {
     this.loadingInitial = true
@@ -32,11 +33,28 @@ class ActivityStore {
     }
   }
 
+  @action createActivity = async (activity: IActivity) => {
+    this.submitting = true
+    try {
+      await agent.Activities.create(activity)
+      this.activities.push(activity)
+      this.editMode = false
+      this.submitting = false
+    } catch (error) {
+      this.submitting = false
+      console.log(error)
+    }
+  }
+
+  @action openCreateForm = () => {
+    this.editMode = true
+    this.selectedActivity = undefined
+  }
+
   @action selectActivity = (id: string) => {
     this.selectedActivity = this.activities.find(activity => activity.id === id)
     this.editMode = false
   }
-
 }
 
 export default createContext(new ActivityStore())
