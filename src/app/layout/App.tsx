@@ -4,7 +4,7 @@ import { observer } from 'mobx-react-lite'
 
 import { IActivity } from '../models/activity'
 
-import { NavBar } from '../../features/nav/NavBar'
+import NavBar from '../../features/nav/NavBar'
 import ActivityDashboard from '../../features/activities/dashboard/ActivityDashboard'
 import LoadingComponent from './LoadingComponent'
 
@@ -20,26 +20,6 @@ const App = () => {
   const [editMode, setEditMode] = useState(false)
   const [submitting, setSubmitting] = useState(false)
   const [target, setTarget] = useState('')
-
-  const handleSelectActivity = (id: string) => {
-    setSelectedActivity(activities.filter(activity => activity.id === id)[0])
-    setEditMode(false)
-  }
-
-  const handleOpenCreateForm = () => {
-    setSelectedActivity(null)
-    setEditMode(true)
-  }
-
-  const handleCreateActivity = (activity: IActivity) => {
-    setSubmitting(true)
-    agent.Activities.create(activity).then(() => {
-      setActivities([...activities, activity])
-      setSelectedActivity(activity)
-      setEditMode(false)
-    })
-      .then(() => setSubmitting(false))
-  }
 
   const handleEditActivity = (activity: IActivity) => {
     setSubmitting(true)
@@ -68,14 +48,12 @@ const App = () => {
 
   return (
     <Fragment>
-      <NavBar openCreateForm={handleOpenCreateForm} />
+      <NavBar />
       <Container style={{ marginTop: '7em' }}>
         <ActivityDashboard
           activities={activityStore.activities}
-          selectActivity={handleSelectActivity}
           setEditMode={setEditMode}
           setSelectedActivity={setSelectedActivity}
-          createActivity={handleCreateActivity}
           editActivity={handleEditActivity}
           deleteActivity={handleDeleteActivity}
           submitting={submitting}
