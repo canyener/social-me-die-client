@@ -5,7 +5,7 @@ import { v4 as uuid } from 'uuid'
 
 interface IProps {
   setEditMode: (editMode: boolean) => void
-  activity: IActivity | null,
+  activity: IActivity | undefined,
   createActivity: (activity: IActivity) => void
   editActivity: (activity: IActivity) => void
   submitting: boolean

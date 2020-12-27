@@ -11,7 +11,9 @@ class ActivityStore {
   }
 
   @observable activities: IActivity[] = []
+  @observable selectedActivity: IActivity | undefined
   @observable loadingInitial = false
+  @observable editMode = false
 
   @action loadActivities = () => {
     this.loadingInitial = true
@@ -23,9 +25,15 @@ class ActivityStore {
           activity.date = activity.date.split('.')[0]
           this.activities.push(activity)
         })
-      })      
+      })
       .finally(() => this.loadingInitial = false)
   }
+
+  @action selectActivity = (id: string) => {
+    this.selectedActivity = this.activities.find(activity => activity.id === id)
+    this.editMode = false
+  }
+
 }
 
 export default createContext(new ActivityStore())
