@@ -4,8 +4,6 @@ import { Item, Button, Label, Segment } from 'semantic-ui-react'
 
 import ActivityStore from '../../../app/stores/activityStore'
 
-import { IActivity } from '../../../app/models/activity'
-
 interface IProps {
   deleteActivity: (event: SyntheticEvent<HTMLButtonElement>, id: string) => void
   submitting: boolean
