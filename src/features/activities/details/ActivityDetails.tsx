@@ -4,20 +4,9 @@ import { observer } from 'mobx-react-lite'
 
 import ActivityStore from '../../../app/stores/activityStore'
 
-import { IActivity } from '../../../app/models/activity'
-
-
-interface IProps {
-  setEditMode: (editMode: boolean) => void
-  setSelectedActivity: (activity: IActivity | null) => void
-}
-
-const ActivityDetails: React.FC<IProps> = ({
-  setEditMode,
-  setSelectedActivity
-}) => {
+const ActivityDetails: React.FC = () => {
   const activityStore = useContext(ActivityStore)
-  const { selectedActivity: activity } = activityStore
+  const { selectedActivity: activity, openEditForm, cancelSelectedActivity } = activityStore
   return (
     <Card fluid>
       <Image src={`/assets/categoryImages/${activity!.category}.jpg`} wrapped ui={false} />
@@ -32,8 +21,8 @@ const ActivityDetails: React.FC<IProps> = ({
       </Card.Content>
       <Card.Content extra>
         <Button.Group widths={2}>
-          <Button onClick={() => setEditMode(true)} basic color='blue'>Edit</Button>
-          <Button onClick={() => setSelectedActivity(null)} basic color='grey'>Cancel</Button>
+          <Button onClick={() => openEditForm(activity!.id)} basic color='blue'>Edit</Button>
+          <Button onClick={cancelSelectedActivity} basic color='grey'>Cancel</Button>
         </Button.Group>
       </Card.Content>
     </Card>
