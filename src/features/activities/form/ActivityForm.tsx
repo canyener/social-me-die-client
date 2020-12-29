@@ -1,6 +1,7 @@
 import React, { FormEvent, useContext, useState } from 'react'
 import { Segment, Form, Button } from 'semantic-ui-react'
 import { v4 as uuid } from 'uuid'
+import { observer } from 'mobx-react-lite'
 
 import { IActivity } from '../../../app/models/activity'
 
@@ -15,7 +16,7 @@ const ActivityForm: React.FC<IProps> = ({
 
   const activityStore = useContext(ActivityStore)
   const { createActivity, editActivity, submitting, cancelFormOpen } = activityStore
-  
+
   const initializeForm = () => {
     if (initialFormState) {
       return initialFormState
@@ -100,4 +101,4 @@ const ActivityForm: React.FC<IProps> = ({
 
 ActivityForm.displayName = 'ActivityForm'
 
-export { ActivityForm }
+export default observer(ActivityForm)
