@@ -6,7 +6,7 @@ import ActivityStore from '../../../app/stores/activityStore'
 
 import ActivityList from './ActivityList'
 import ActivityDetails from '../details/ActivityDetails'
-import { ActivityForm } from '../form/ActivityForm'
+import ActivityForm from '../form/ActivityForm'
 
 const ActivityDashboard: React.FC = () => {
   const activityStore = useContext(ActivityStore)
