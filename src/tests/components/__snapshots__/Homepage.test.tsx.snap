@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render Homepage correctly 1`] = `
+<Container
+  style={
+    Object {
+      "marginTop": "7em",
+    }
+  }
+>
+  <h1>
+    Home page
+  </h1>
+</Container>
+`;
