@@ -24,7 +24,19 @@ exports[`Should render App correctly 1`] = `
           "type": [Function],
         }
       }
+      exact={true}
       path="/activities"
+    />
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "displayName": "ActivityDetails",
+          "type": [Function],
+        }
+      }
+      path="/activities/:id"
     />
     <Route
       component={
