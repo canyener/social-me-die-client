@@ -6,10 +6,12 @@ import './app/layout/styles.css'
 import * as serviceWorker from './serviceWorker'
 
 import App from './app/layout/App'
+import ScrollToTop from './app/layout/ScrollToTop'
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <ScrollToTop /> 
+      <App />
   </BrowserRouter>
   ,
   document.getElementById('root')
