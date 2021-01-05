@@ -15,10 +15,8 @@ class ActivityStore {
   }
 
   @observable activityRegistry = new Map()
-  @observable activities: IActivity[] = []
   @observable activity: IActivity | null = null
   @observable loadingInitial = false
-  @observable editMode = false
   @observable submitting = false
   @observable target = ''
 
@@ -84,7 +82,6 @@ class ActivityStore {
 
       runInAction(() => {
         this.activityRegistry.set(activity.id, activity)
-        this.editMode = false
         this.submitting = false
       })
 
@@ -104,7 +101,6 @@ class ActivityStore {
       runInAction(() => {
         this.activityRegistry.set(activity.id, activity)
         this.activity = activity
-        this.editMode = false
         this.submitting = false
       })
 
@@ -135,29 +131,6 @@ class ActivityStore {
 
       console.log(error)
     }
-  }
-
-  @action openEditForm = async (id: string) => {
-    this.activity = this.activityRegistry.get(id)
-    this.editMode = true
-  }
-
-  @action openCreateForm = () => {
-    this.editMode = true
-    this.activity = null
-  }
-
-  @action cancelSelectedActivity = () => {
-    this.activity = null
-  }
-
-  @action cancelFormOpen = () => {
-    this.editMode = false
-  }
-
-  @action selectActivity = (id: string) => {
-    this.activity = this.activityRegistry.get(id)
-    this.editMode = false
   }
 }
 
