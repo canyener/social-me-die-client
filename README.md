@@ -8,8 +8,6 @@
 
 - Client App for my social media experiment with .net core, entity framework core, react and mobx.
 
-- `playground/` folder is committed for learning purposes but excluded from quality gate and coverage results.  
-
 - You can find API repository [here](https://github.com/canyener/social-me-die).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
