@@ -1,54 +1,75 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render ActivityListItem correctly 1`] = `
-<Item
-  key="1"
->
-  <ItemContent>
-    <ItemHeader
-      as="a"
-    >
-      Fake Activity 1
-    </ItemHeader>
-    <ItemMeta>
-      2020-02-02T16:16:16
-    </ItemMeta>
-    <ItemDescription>
-      <div>
-        Fake description
-      </div>
-      <div>
-        Fake City
-        , 
-        Fake Venue
-      </div>
-    </ItemDescription>
-    <ItemExtra>
-      <Button
-        as={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "displayName": "Link",
-            "propTypes": Object {
-              "innerRef": [Function],
-              "onClick": [Function],
-              "replace": [Function],
-              "target": [Function],
-              "to": [Function],
-            },
-            "render": [Function],
-          }
+<SegmentGroup>
+  <Segment>
+    <ItemGroup>
+      <Item>
+        <ItemImage
+          circular={true}
+          size="tiny"
+          src="/assets/user.png"
+        />
+        <ItemContent>
+          <ItemHeader
+            as="a"
+          >
+            Fake Activity 1
+          </ItemHeader>
+          <ItemDescription>
+            Hosted by Cancan
+          </ItemDescription>
+        </ItemContent>
+      </Item>
+    </ItemGroup>
+  </Segment>
+  <Segment>
+    <Icon
+      as="i"
+      name="clock"
+    />
+     
+    2020-02-02T16:16:16
+    <Icon
+      as="i"
+      name="marker"
+    />
+     
+    Fake Venue
+    , 
+    Fake City
+  </Segment>
+  <Segment
+    secondary={true}
+  >
+    Attendees will go here
+  </Segment>
+  <Segment
+    clearing={true}
+  >
+    <span>
+      Fake description
+    </span>
+    <Button
+      as={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "displayName": "Link",
+          "propTypes": Object {
+            "innerRef": [Function],
+            "onClick": [Function],
+            "replace": [Function],
+            "target": [Function],
+            "to": [Function],
+          },
+          "render": [Function],
         }
-        color="blue"
-        content="View"
-        floated="right"
-        to="/activities/1"
-      />
-      <Label
-        basic={true}
-        content="Fake Category 1"
-      />
-    </ItemExtra>
-  </ItemContent>
-</Item>
+      }
+      color="blue"
+      content="View"
+      floated="right"
+      to="/activities/1"
+    />
+  </Segment>
+</SegmentGroup>
 `;
