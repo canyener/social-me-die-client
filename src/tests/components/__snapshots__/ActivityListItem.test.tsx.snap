@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render ActivityListItem correctly 1`] = `
+<Item
+  key="1"
+>
+  <ItemContent>
+    <ItemHeader
+      as="a"
+    >
+      Fake Activity 1
+    </ItemHeader>
+    <ItemMeta>
+      2020-02-02T16:16:16
+    </ItemMeta>
+    <ItemDescription>
+      <div>
+        Fake description
+      </div>
+      <div>
+        Fake City
+        , 
+        Fake Venue
+      </div>
+    </ItemDescription>
+    <ItemExtra>
+      <Button
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Link",
+            "propTypes": Object {
+              "innerRef": [Function],
+              "onClick": [Function],
+              "replace": [Function],
+              "target": [Function],
+              "to": [Function],
+            },
+            "render": [Function],
+          }
+        }
+        color="blue"
+        content="View"
+        floated="right"
+        to="/activities/1"
+      />
+      <Label
+        basic={true}
+        content="Fake Category 1"
+      />
+    </ItemExtra>
+  </ItemContent>
+</Item>
+`;
