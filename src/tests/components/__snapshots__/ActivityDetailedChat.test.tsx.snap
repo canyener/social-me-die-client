@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render ActivityDetailedChat correctly 1`] = `
+<Fragment>
+  <Segment
+    attached="top"
+    color="teal"
+    inverted={true}
+    style={
+      Object {
+        "border": "none",
+      }
+    }
+    textAlign="center"
+  >
+    <Header>
+      Chat about this event
+    </Header>
+  </Segment>
+  <Segment
+    attached={true}
+  >
+    <CommentGroup>
+      <Comment>
+        <CommentAvatar
+          src="/assets/user.png"
+        />
+        <CommentContent>
+          <CommentAuthor
+            as="a"
+          >
+            Can
+          </CommentAuthor>
+          <CommentMetadata>
+            <div>
+              Today at 5:42PM
+            </div>
+          </CommentMetadata>
+          <CommentText>
+            Niceee!
+          </CommentText>
+          <CommentActions>
+            <CommentAction
+              as="a"
+            >
+              Reply
+            </CommentAction>
+          </CommentActions>
+        </CommentContent>
+      </Comment>
+      <Comment>
+        <CommentAvatar
+          src="/assets/user.png"
+        />
+        <CommentContent>
+          <CommentAuthor
+            as="a"
+          >
+            Onur the Designer
+          </CommentAuthor>
+          <CommentMetadata>
+            <div>
+              5 days ago
+            </div>
+          </CommentMetadata>
+          <CommentText>
+            Dude, this is awesome. Thanks so much
+          </CommentText>
+          <CommentActions>
+            <CommentAction
+              as="a"
+            >
+              Reply
+            </CommentAction>
+          </CommentActions>
+        </CommentContent>
+      </Comment>
+      <Form
+        as="form"
+        reply={true}
+      >
+        <FormTextArea
+          as={[Function]}
+          control={[Function]}
+        />
+        <Button
+          as="button"
+          content="Add Reply"
+          icon="edit"
+          labelPosition="left"
+          primary={true}
+        />
+      </Form>
+    </CommentGroup>
+  </Segment>
+</Fragment>
+`;
