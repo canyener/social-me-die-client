@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render ActivityDetailedSidebar correctly 1`] = `
+<Fragment>
+  <Segment
+    attached="top"
+    color="teal"
+    inverted={true}
+    secondary={true}
+    style={
+      Object {
+        "border": "none",
+      }
+    }
+    textAlign="center"
+  >
+    3 People Going
+  </Segment>
+  <Segment
+    attached={true}
+  >
+    <List
+      divided={true}
+      relaxed={true}
+    >
+      <Item
+        style={
+          Object {
+            "position": "relative",
+          }
+        }
+      >
+        <Label
+          color="orange"
+          ribbon="right"
+          style={
+            Object {
+              "position": "absolute",
+            }
+          }
+        >
+          Host
+        </Label>
+        <Image
+          as="img"
+          size="tiny"
+          src="/assets/user.png"
+          ui={true}
+        />
+        <ItemContent
+          verticalAlign="middle"
+        >
+          <ItemHeader
+            as="h3"
+          >
+            <Link
+              to="#"
+            >
+              Can
+            </Link>
+          </ItemHeader>
+          <ItemExtra
+            style={
+              Object {
+                "color": "orange",
+              }
+            }
+          >
+            Following
+          </ItemExtra>
+        </ItemContent>
+      </Item>
+      <Item
+        style={
+          Object {
+            "position": "relative",
+          }
+        }
+      >
+        <Image
+          as="img"
+          size="tiny"
+          src="/assets/user.png"
+          ui={true}
+        />
+        <ItemContent
+          verticalAlign="middle"
+        >
+          <ItemHeader
+            as="h3"
+          >
+            <Link
+              to="#"
+            >
+              Cem
+            </Link>
+          </ItemHeader>
+          <ItemExtra
+            style={
+              Object {
+                "color": "orange",
+              }
+            }
+          >
+            Following
+          </ItemExtra>
+        </ItemContent>
+      </Item>
+      <Item
+        style={
+          Object {
+            "position": "relative",
+          }
+        }
+      >
+        <Image
+          as="img"
+          size="tiny"
+          src="/assets/user.png"
+          ui={true}
+        />
+        <ItemContent
+          verticalAlign="middle"
+        >
+          <ItemHeader
+            as="h3"
+          >
+            <Link
+              to="#"
+            >
+              Onur
+            </Link>
+          </ItemHeader>
+        </ItemContent>
+      </Item>
+    </List>
+  </Segment>
+</Fragment>
+`;
