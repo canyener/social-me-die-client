@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render ActivityDetailedHeader correctly 1`] = `
+<SegmentGroup>
+  <Segment
+    attached="top"
+    basic={true}
+    style={
+      Object {
+        "padding": "0",
+      }
+    }
+  >
+    <Image
+      as="img"
+      fluid={true}
+      src="/assets/categoryImages/Fake Category 1.jpg"
+      style={
+        Object {
+          "filter": "brightness(30%)",
+        }
+      }
+      ui={true}
+    />
+    <Segment
+      basic={true}
+      style={
+        Object {
+          "bottom": "5%",
+          "color": "white",
+          "height": "auto",
+          "left": "5%",
+          "position": "absolute",
+          "width": "100%",
+        }
+      }
+    >
+      <ItemGroup>
+        <Item>
+          <ItemContent>
+            <Header
+              content="Fake Activity 1"
+              size="huge"
+              style={
+                Object {
+                  "color": "white",
+                }
+              }
+            />
+            <p>
+              2020-02-02T16:16:16
+            </p>
+            <p>
+              Hosted by 
+              <strong>
+                Cancan
+              </strong>
+            </p>
+          </ItemContent>
+        </Item>
+      </ItemGroup>
+    </Segment>
+  </Segment>
+  <Segment
+    attached="bottom"
+    clearing={true}
+  >
+    <Button
+      as="button"
+      color="teal"
+    >
+      Join Activity
+    </Button>
+    <Button
+      as="button"
+    >
+      Cancel attendance
+    </Button>
+    <Button
+      as="button"
+      color="orange"
+      floated="right"
+    >
+      Manage Event
+    </Button>
+  </Segment>
+</SegmentGroup>
+`;
