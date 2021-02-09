@@ -1,23 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render Homepage correctly 1`] = `
-<Container
-  style={
-    Object {
-      "marginTop": "7em",
-    }
-  }
+<Segment
+  className="masthead"
+  inverted={true}
+  textAlign="center"
+  vertical={true}
 >
-  <h1>
-    Home page
-  </h1>
-  <h3>
-    Go to 
-    <Link
+  <Container
+    text={true}
+  >
+    <Header
+      as="h1"
+      inverted={true}
+    >
+      <Image
+        alt="logo"
+        as="img"
+        size="massive"
+        src="/assets/logo.png"
+        style={
+          Object {
+            "marginBottom": 12,
+          }
+        }
+        ui={true}
+      />
+      Social-me-die
+    </Header>
+    <Header
+      as="h2"
+      content="Welcome to my little social media experiment"
+      inverted={true}
+    />
+    <Button
+      as={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "displayName": "Link",
+          "propTypes": Object {
+            "innerRef": [Function],
+            "onClick": [Function],
+            "replace": [Function],
+            "target": [Function],
+            "to": [Function],
+          },
+          "render": [Function],
+        }
+      }
+      inverted={true}
+      size="huge"
       to="/activities"
     >
-      Activities
-    </Link>
-  </h3>
-</Container>
+      Take me to the activities!
+    </Button>
+  </Container>
+</Segment>
 `;
