@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render NotFound correctly 1`] = `
+<Segment
+  placeholder={true}
+>
+  <Header
+    icon={true}
+  >
+    <Icon
+      as="i"
+      name="search"
+    />
+    Oops! We've looked everywhere but couldn't find this.
+  </Header>
+  <SegmentInline>
+    <Button
+      as={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "displayName": "Link",
+          "propTypes": Object {
+            "innerRef": [Function],
+            "onClick": [Function],
+            "replace": [Function],
+            "target": [Function],
+            "to": [Function],
+          },
+          "render": [Function],
+        }
+      }
+      primary={true}
+      to="/activities"
+    >
+      Return to Activities page.
+    </Button>
+  </SegmentInline>
+</Segment>
+`;
