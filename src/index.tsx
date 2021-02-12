@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter } from 'react-router-dom'
+import { Router } from 'react-router-dom'
+import { createBrowserHistory } from 'history'
 
 import './app/layout/styles.css'
 import * as serviceWorker from './serviceWorker'
@@ -8,11 +9,13 @@ import * as serviceWorker from './serviceWorker'
 import App from './app/layout/App'
 import ScrollToTop from './app/layout/ScrollToTop'
 
+export const history = createBrowserHistory()
+
 ReactDOM.render(
-  <BrowserRouter>
-    <ScrollToTop /> 
-      <App />
-  </BrowserRouter>
+  <Router history={history}>
+    <ScrollToTop />
+    <App />
+  </Router>
   ,
   document.getElementById('root')
 );
