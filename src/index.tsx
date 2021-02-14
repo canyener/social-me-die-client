@@ -4,6 +4,8 @@ import { Router } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 
 import './app/layout/styles.css'
+import 'react-toastify/dist/ReactToastify.css';
+
 import * as serviceWorker from './serviceWorker'
 
 import App from './app/layout/App'
