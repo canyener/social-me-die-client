@@ -15,11 +15,11 @@ axios.interceptors.response.use(undefined, error => {
 
   if (status === 400 && config.method === 'get' && data.errors.hasOwnProperty('id')) {
     history.push('/notfound')
-  } 
+  }
 
-   if(status === 500 ){
-     toast.error('Server error - check the terminal for more info!')
-   }
+  if (status === 500) {
+    toast.error('Server error - check the terminal for more info!')
+  }
 })
 
 const responseBody = (response: AxiosResponse) => response.data
