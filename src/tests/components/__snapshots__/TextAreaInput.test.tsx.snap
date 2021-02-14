@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render TextAreaInput correctly without any given errors 1`] = `
+<FormField
+  error={false}
+  width="11"
+>
+  <textarea
+    name="Test textarea name"
+    onBlur={[MockFunction]}
+    onChange={[MockFunction]}
+    onFocus={[MockFunction]}
+    placeholder="Test TextArea Placeholder"
+    rows={3}
+    value="Test textarea value"
+  />
+</FormField>
+`;
+
+exports[`Should set Form.Field error to true and render Label with given error message 1`] = `
+<FormField
+  error={true}
+  width="11"
+>
+  <textarea
+    name="Test textarea name"
+    onBlur={[MockFunction]}
+    onChange={[MockFunction]}
+    onFocus={[MockFunction]}
+    placeholder="Test TextAreaPlaceholder"
+    rows={3}
+    value="Test textarea value"
+  />
+  <Label
+    basic={true}
+    color="red"
+  >
+    test error message
+  </Label>
+</FormField>
+`;
