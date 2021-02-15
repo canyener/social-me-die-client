@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render SelectInput correctly without any given errors 1`] = `
+<FormField
+  error={false}
+  width="11"
+>
+  <Select
+    onChange={[Function]}
+    options={
+      Array [
+        Object {
+          "key": "drinks",
+          "text": "Drinks",
+          "value": "drinks",
+        },
+        Object {
+          "key": "culture",
+          "text": "Culture",
+          "value": "culture",
+        },
+        Object {
+          "key": "film",
+          "text": "Film",
+          "value": "film",
+        },
+      ]
+    }
+    placeholder="test select input placeholder"
+    value="TestSelectInputValue"
+  />
+</FormField>
+`;
+
+exports[`Should set Form.Field error to true and render Label with given error message 1`] = `
+<FormField
+  error={true}
+  width="11"
+>
+  <Select
+    onChange={[Function]}
+    options={
+      Array [
+        Object {
+          "key": "drinks",
+          "text": "Drinks",
+          "value": "drinks",
+        },
+        Object {
+          "key": "culture",
+          "text": "Culture",
+          "value": "culture",
+        },
+        Object {
+          "key": "film",
+          "text": "Film",
+          "value": "film",
+        },
+      ]
+    }
+    placeholder="test select input placeholder"
+    value="TestSelectInputValue"
+  />
+  <Label
+    basic={true}
+    color="red"
+  >
+    test select input error message
+  </Label>
+</FormField>
+`;
