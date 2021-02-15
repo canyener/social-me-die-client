@@ -11,6 +11,7 @@ exports[`Should render TextInput correctly without any given errors 1`] = `
     onChange={[MockFunction]}
     onFocus={[MockFunction]}
     placeholder="Test Input PlaceHolder"
+    type="text"
     value="Test input value"
   />
 </FormField>
@@ -27,6 +28,7 @@ exports[`Should set Form.Field error to true and render Label with given error m
     onChange={[MockFunction]}
     onFocus={[MockFunction]}
     placeholder="Test Input PlaceHolder"
+    type="text"
     value="Test input value"
   />
   <Label
