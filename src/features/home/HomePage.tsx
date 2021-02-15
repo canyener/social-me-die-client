@@ -13,7 +13,7 @@ const HomePage = () => {
             alt='logo'
             style={{ marginBottom: 12 }}
           />
-          Social-me-die
+          social-me-die
         </Header>
         <Header as='h2' inverted content='Welcome to my little social media experiment' />
         <Button as={Link} to='/activities' size='huge' inverted>
