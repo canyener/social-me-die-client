@@ -1,4 +1,5 @@
-import {shallow } from 'enzyme'
+import { shallow } from 'enzyme'
+
 import ActivityDetailedChat from '../../features/activities/details/ActivityDetailedChat'
 
 test('Should render ActivityDetailedChat correctly', () => {
