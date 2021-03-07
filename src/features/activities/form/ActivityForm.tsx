@@ -11,6 +11,9 @@ import ActivityStore from '../../../app/stores/activityStore'
 
 import TextInput from '../../../app/common/form/TextInput'
 import TextAreaInput from '../../../app/common/form/TextAreaInput'
+import SelectInput from '../../../app/common/form/SelectInput'
+
+import { categories } from '../../../app/common/options/categoryOptions'
 
 interface DetailParams {
   id: string
@@ -89,9 +92,10 @@ const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({ match, hist
                 />
                 <Field
                   name='category'
+                  options={categories}
                   placeholder='Category'
                   value={activity.category}
-                  component={TextInput}
+                  component={SelectInput}
                 />
                 <Field
                   name='date'
