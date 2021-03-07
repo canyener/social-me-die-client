@@ -1,4 +1,4 @@
-import React, { FormEvent, useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Segment, Form, Button, Grid } from 'semantic-ui-react'
 import { v4 as uuid } from 'uuid'
 import { observer } from 'mobx-react-lite'
@@ -61,11 +61,6 @@ const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({ match, hist
   //   }
   // }
 
-  const handleInputChange = (event: FormEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = event.currentTarget
-    setActivity({ ...activity, [name]: value })
-  }
-
   const handleFinalFormSubmit = (values: any) => {
     console.log(values)
   }
@@ -84,37 +79,36 @@ const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({ match, hist
                   value={activity.title}
                   component={TextInput}
                 />
-                <Form.TextArea
-                  onChange={handleInputChange}
+                <Field
                   name='description'
-                  rows={2}
                   placeholder='Description'
                   value={activity.description}
+                  component={TextInput}
                 />
-                <Form.Input
-                  onChange={handleInputChange}
+                <Field
                   name='category'
                   placeholder='Category'
                   value={activity.category}
+                  component={TextInput}
                 />
-                <Form.Input
-                  onChange={handleInputChange}
+                <Field
                   name='date'
-                  type='datetime-local'
                   placeholder='Date'
                   value={activity.date}
+                  component={TextInput}
                 />
-                <Form.Input
-                  onChange={handleInputChange}
+                <Field
                   name='city'
                   placeholder='City'
                   value={activity.city}
+                  component={TextInput}
                 />
-                <Form.Input
-                  onChange={handleInputChange}
+                <Field
                   name='venue'
                   placeholder='Venue'
-                  value={activity.venue} />
+                  value={activity.venue}
+                  component={TextInput}
+                />
                 <Button loading={submitting} floated='right' positive type='submit' content='Submit' />
                 <Button onClick={() => history.push('/activities')} floated='right' type='button' content='Cancel' />
               </Form>
