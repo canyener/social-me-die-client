@@ -29,4 +29,10 @@ const fakeActivities: IActivity[] = [{
   venue: 'Fake Venue 2'
 }]
 
-export { fakeValues, fakeActivities }
+const fakeCategories = [
+  { key: 'fakeCategoryOption1', text: 'Fake Category Option 1', value:'fakeCategoryOption1'},
+  { key: 'fakeCategoryOption2', text: 'Fake Category Option 2', value:'fakeCategoryOption2'},
+  { key: 'fakeCategoryOption3', text: 'Fake Category Option 3', value:'fakeCategoryOption3'}
+]
+
+export { fakeValues, fakeActivities, fakeCategories }
