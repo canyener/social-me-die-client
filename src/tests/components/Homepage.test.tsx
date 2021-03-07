@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme'
-import HomePage from '../../features/home/HomePage'
 
+import HomePage from '../../features/home/HomePage'
 
 test('Should render Homepage correctly', () => {
   const wrapper = shallow(<HomePage />)
