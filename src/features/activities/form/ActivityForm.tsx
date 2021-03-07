@@ -10,6 +10,7 @@ import { IActivity } from '../../../app/models/activity'
 import ActivityStore from '../../../app/stores/activityStore'
 
 import TextInput from '../../../app/common/form/TextInput'
+import TextAreaInput from '../../../app/common/form/TextAreaInput'
 
 interface DetailParams {
   id: string
@@ -81,9 +82,10 @@ const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({ match, hist
                 />
                 <Field
                   name='description'
+                  rows={3}
                   placeholder='Description'
                   value={activity.description}
-                  component={TextInput}
+                  component={TextAreaInput}
                 />
                 <Field
                   name='category'
