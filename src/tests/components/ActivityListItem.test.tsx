@@ -1,5 +1,4 @@
 import { shallow } from 'enzyme'
-import React from 'react'
 
 import ActivityListItem from '../../features/activities/dashboard/ActivityListItem'
 import { fakeActivities } from '../fixtures/seed'
