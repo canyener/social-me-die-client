@@ -48,7 +48,7 @@ exports[`Should render ActivityDetailedHeader correctly 1`] = `
               }
             />
             <p>
-              1/1/1111
+              Sunday 1st January
             </p>
             <p>
               Hosted by 
