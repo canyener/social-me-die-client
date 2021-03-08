@@ -1,3 +1,4 @@
+
 import { shallow } from 'enzyme'
 import TextInput from '../../app/common/form/TextInput'
 
