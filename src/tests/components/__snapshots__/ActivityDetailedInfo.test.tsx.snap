@@ -45,9 +45,9 @@ exports[`Should render ActivityDetailedInfo correctly 1`] = `
         width={15}
       >
         <span>
-          Sunday 1st January
+          Friday 24th December
            at 
-          01:55 AM
+          10:33 AM
            
         </span>
       </GridColumn>
