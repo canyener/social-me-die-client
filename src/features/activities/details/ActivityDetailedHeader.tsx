@@ -36,7 +36,7 @@ const ActivityDetailedHeader: React.FC<{activity: IActivity}> = ({ activity }) =
                 content={activity.title}
                 style={{ color: 'white' }}
               />
-              <p>{activity.date}</p>
+              <p>{activity.date!.toLocaleDateString('tr-TR')}</p>
               <p>
                 Hosted by <strong>Cancan</strong>
               </p>
