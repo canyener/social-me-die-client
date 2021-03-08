@@ -45,7 +45,7 @@ exports[`Should render ActivityDetailedInfo correctly 1`] = `
         width={15}
       >
         <span>
-          01.01.1111
+          1/1/1111
         </span>
       </GridColumn>
     </Grid>
