@@ -12,6 +12,7 @@ import ActivityStore from '../../../app/stores/activityStore'
 import TextInput from '../../../app/common/form/TextInput'
 import TextAreaInput from '../../../app/common/form/TextAreaInput'
 import SelectInput from '../../../app/common/form/SelectInput'
+import DateInput from '../../../app/common/form/DateInput'
 
 import { categories } from '../../../app/common/options/categoryOptions'
 
@@ -38,7 +39,7 @@ const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({ match, hist
     category: '',
     city: '',
     venue: '',
-    date: ''
+    date: null
   })
 
   useEffect(() => {
@@ -101,7 +102,7 @@ const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({ match, hist
                   name='date'
                   placeholder='Date'
                   value={activity.date}
-                  component={TextInput}
+                  component={DateInput}
                 />
                 <Field
                   name='city'
