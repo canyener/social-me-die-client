@@ -16,7 +16,7 @@ const fakeActivities: IActivity[] = [{
   title: 'Fake Activity 1',
   category: 'Fake Category 1',
   city: 'Fake City',
-  date: new Date('1111'),
+  date: new Date(2021, 11, 24, 10, 33, 30, 0),
   description: 'Fake description',
   venue: 'Fake Venue'
 }, {
