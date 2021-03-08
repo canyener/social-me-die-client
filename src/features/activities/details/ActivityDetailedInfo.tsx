@@ -23,7 +23,7 @@ const ActivityDetailedInfo: React.FC<{ activity: IActivity }> = ({ activity }) =
             <Icon name='calendar' size='large' color='teal' />
           </Grid.Column>
           <Grid.Column width={15}>
-            <span>{activity.date!.toLocaleDateString('tr-TR')}</span>
+            <span>{activity.date!.toLocaleDateString('en-US')}</span>
           </Grid.Column>
         </Grid>
       </Segment>

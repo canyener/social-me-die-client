@@ -21,7 +21,7 @@ const ActivityListItem: React.FC<{ activity: IActivity }> = ({ activity }) => {
         </Item.Group>
       </Segment>
       <Segment>
-        <Icon name='clock' /> {activity.date!.toLocaleDateString('tr-TR')}
+        <Icon name='clock' /> {activity.date!.toLocaleDateString('en-US')}
         <Icon name='marker' /> {activity.venue}, {activity.city}
       </Segment>
       <Segment secondary>
