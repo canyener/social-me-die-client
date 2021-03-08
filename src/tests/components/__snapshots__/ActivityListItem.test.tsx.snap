@@ -29,7 +29,7 @@ exports[`Should render ActivityListItem correctly 1`] = `
       name="clock"
     />
      
-    2020-02-02T16:16:16
+    10:33 AM
     <Icon
       as="i"
       name="marker"

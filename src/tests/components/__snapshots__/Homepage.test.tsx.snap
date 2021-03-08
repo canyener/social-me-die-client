@@ -26,7 +26,7 @@ exports[`Should render Homepage correctly 1`] = `
         }
         ui={true}
       />
-      Social-me-die
+      social-me-die
     </Header>
     <Header
       as="h2"

@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render DateInput correctly without any given errors 1`] = `
+<FormField
+  error={false}
+  width="11"
+>
+  <Uncontrolled(DateTimePicker)
+    id="test-id"
+    onChange={[MockFunction]}
+    placeholder="Test Input PlaceHolder"
+    value="Test input value"
+  />
+</FormField>
+`;
+
+exports[`Should set Form.Field error to true and render Label with given error message 1`] = `
+<FormField
+  error={true}
+  width="11"
+>
+  <Uncontrolled(DateTimePicker)
+    onChange={[MockFunction]}
+    placeholder="Test Input PlaceHolder"
+    type="text"
+    value="Test input value"
+  />
+  <Label
+    basic={true}
+    color="red"
+  >
+    test error message
+  </Label>
+</FormField>
+`;
