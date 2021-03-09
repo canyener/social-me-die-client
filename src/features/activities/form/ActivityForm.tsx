@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Segment, Form, Button, Grid } from 'semantic-ui-react'
-import { v4 as uuid } from 'uuid'
 import { observer } from 'mobx-react-lite'
 import { RouteComponentProps } from 'react-router-dom'
 import { Form as FinalForm, Field } from 'react-final-form'
@@ -24,8 +23,6 @@ const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({ match, hist
 
   const activityStore = useContext(ActivityStore)
   const {
-    createActivity,
-    editActivity,
     submitting,
     activity: initialFormState,
     loadActivity,
