@@ -3,7 +3,7 @@ import { Form, FormFieldProps, Label } from 'semantic-ui-react'
 import { DateTimePicker } from 'react-widgets'
 
 interface IProps
-  extends FieldRenderProps<any, HTMLInputElement>,
+  extends FieldRenderProps<Date, HTMLElement>,
   FormFieldProps {
   id?: string
 }
