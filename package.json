@@ -12,7 +12,7 @@
     "@types/uuid": "^8.3.0",
     "axios": "^0.21.1",
     "date-fns": "2.0.0-alpha.13",
-    "final-form": "4.16.1",
+    "final-form": "4.20.2",
     "mobx": "^6.1.8",
     "mobx-react-lite": "^3.2.0",
     "react": "^16.14.0",
