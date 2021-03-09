@@ -2775,10 +2775,10 @@
     "@types/history" "*"
     "@types/react" "*"
 
-"@types/react-widgets@4.3.3":
-  version "4.3.3"
-  resolved "https://registry.yarnpkg.com/@types/react-widgets/-/react-widgets-4.3.3.tgz#dac3061e70d974e6d92b3e8269e9a9c8ff499ef6"
-  integrity sha512-7fL7+1FIOWdFTpoYK2d+tLnewX6l302du1QnQzSaaNOovew1z6hZ3VJsHnFwO57Tl0Y27tAkNz10UODy5NK8PA==
+"@types/react-widgets@4.4.3":
+  version "4.4.3"
+  resolved "https://registry.yarnpkg.com/@types/react-widgets/-/react-widgets-4.4.3.tgz#f8eb5cf1b199b410d307d83812ecab086b2ce67d"
+  integrity sha512-ouy/fY99pUR/glM3vA5zhqIajNcVT5ENm75hHarWsIP+JkPJAg1gYgEQbkLlh77prQ9vM42cKxIkYzGw1d2GGA==
   dependencies:
     "@types/react" "*"
 
