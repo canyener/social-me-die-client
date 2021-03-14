@@ -9,7 +9,7 @@ exports[`Should render DateInput correctly without any given errors 1`] = `
     id="test-id"
     onChange={[MockFunction]}
     placeholder="Test DateInput PlaceHolder"
-    value={2021-12-24T07:33:30.000Z}
+    value={"2021-12-24T10:33:30.000Z"}
   />
 </FormField>
 `;
@@ -23,7 +23,7 @@ exports[`Should set Form.Field error to true and render Label with given error m
     onChange={[MockFunction]}
     placeholder="Test DateInput PlaceHolder"
     type="text"
-    value={2021-12-24T07:33:30.000Z}
+    value={"2021-12-24T10:33:30.000Z"}
   />
   <Label
     basic={true}
