@@ -5,11 +5,11 @@ exports[`Should render DateInput correctly without any given errors 1`] = `
   error={false}
   width="11"
 >
-  <Uncontrolled(DateTimePicker)
+  <ForwardRef
     id="test-id"
     onChange={[MockFunction]}
-    placeholder="Test Input PlaceHolder"
-    value="Test input value"
+    placeholder="Test DateInput PlaceHolder"
+    value={"2021-12-24T10:33:30.000Z"}
   />
 </FormField>
 `;
@@ -19,11 +19,11 @@ exports[`Should set Form.Field error to true and render Label with given error m
   error={true}
   width="11"
 >
-  <Uncontrolled(DateTimePicker)
+  <ForwardRef
     onChange={[MockFunction]}
-    placeholder="Test Input PlaceHolder"
+    placeholder="Test DateInput PlaceHolder"
     type="text"
-    value="Test input value"
+    value={"2021-12-24T10:33:30.000Z"}
   />
   <Label
     basic={true}

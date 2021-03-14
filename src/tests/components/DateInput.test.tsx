@@ -1,18 +1,24 @@
 import { shallow } from 'enzyme'
+import { register } from 'timezone-mock'
+
 import DateInput from "../../app/common/form/DateInput"
+
+beforeEach(() => {
+  register('Europe/London')
+})
 
 test('Should render DateInput correctly without any given errors', () => {
 
   const wrapper = shallow(<DateInput
     id='test-id'
     width='11'
-    placeholder='Test Input PlaceHolder'
+    placeholder='Test DateInput PlaceHolder'
     input={{
       onBlur: jest.fn(),
       onChange: jest.fn(),
       onFocus: jest.fn(),
-      name: 'Test input name',
-      value: 'Test input value'
+      name: 'date',
+      value: new Date(2021, 11, 24, 10, 33, 30, 0)
     }}
     meta={{
       touched: false,
@@ -27,13 +33,13 @@ test('Should set Form.Field error to true and render Label with given error mess
   const wrapper = shallow(<DateInput
     type='text'
     width='11'
-    placeholder='Test Input PlaceHolder'
+    placeholder='Test DateInput PlaceHolder'
     input={{
       onBlur: jest.fn(),
       onChange: jest.fn(),
       onFocus: jest.fn(),
-      name: 'Test input name',
-      value: 'Test input value'
+      name: 'date',
+      value: new Date(2021, 11, 24, 10, 33, 30, 0)
     }}
     meta={{
       touched: true,
