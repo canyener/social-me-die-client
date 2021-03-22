@@ -1,27 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should render DateInput correctly without any given errors 1`] = `
+exports[`Date Picker Tests Should render DateInput Date Picker correctly without any given errors 1`] = `
 <FormField
   error={false}
   width="11"
 >
   <ForwardRef
+    date={true}
     id="test-id"
     onChange={[MockFunction]}
     placeholder="Test DateInput PlaceHolder"
+    time={false}
     value={"2021-12-24T10:33:30.000Z"}
   />
 </FormField>
 `;
 
-exports[`Should set Form.Field error to true and render Label with given error message 1`] = `
+exports[`Date Picker Tests Should set Date Picker Form.Field error to true and render Label with given error message 1`] = `
 <FormField
   error={true}
   width="11"
 >
   <ForwardRef
+    date={true}
     onChange={[MockFunction]}
     placeholder="Test DateInput PlaceHolder"
+    time={false}
+    type="text"
+    value={"2021-12-24T10:33:30.000Z"}
+  />
+  <Label
+    basic={true}
+    color="red"
+  >
+    test error message
+  </Label>
+</FormField>
+`;
+
+exports[`Time Picker Tests Should render DateInput Time Picker correctly without any given errors 1`] = `
+<FormField
+  error={false}
+  width="11"
+>
+  <ForwardRef
+    date={false}
+    id="test-id"
+    onChange={[MockFunction]}
+    placeholder="Test DateInput PlaceHolder"
+    time={true}
+    value={"2021-12-24T10:33:30.000Z"}
+  />
+</FormField>
+`;
+
+exports[`Time Picker Tests Should set Time Picker Form.Field error to true and render Label with given error message 1`] = `
+<FormField
+  error={true}
+  width="11"
+>
+  <ForwardRef
+    date={false}
+    onChange={[MockFunction]}
+    placeholder="Test DateInput PlaceHolder"
+    time={true}
     type="text"
     value={"2021-12-24T10:33:30.000Z"}
   />
