@@ -1,21 +1,15 @@
 import { combineDateAndTime } from "../../app/common/util/util"
-import { register } from 'timezone-mock'
 
 describe('#combineDateAndTime', () => {
 
   test('Should return correct combined date', () => {
 
-    const date = new Date(2021, 2, 11, 12, 12)
-    const time = new Date(2021, 11, 24, 11, 11)
+    const date = new Date(2020, 1, 11, 12, 12)
+    const time = new Date(2020, 11, 11, 10, 10)
 
-    const result = combineDateAndTime(date, time)
-
-    const dateText = result.toLocaleDateString('tr-TR', { timeZone: 'Europe/London' })
-    const timeText = result.toLocaleTimeString('tr-TR', { timeZone: 'Europe/London' })
-
-    const actual = `${dateText} ${timeText}`
-
-    expect(actual).toBe('11.03.2021 08:11:00')
+    const actual = combineDateAndTime(date, time)
+    
+    expect(actual).toEqual(new Date('2020-02-11T07:10:00.000Z'))
   })
 
   test('Should return type of Date', () => {
