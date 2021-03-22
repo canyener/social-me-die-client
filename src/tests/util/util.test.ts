@@ -10,12 +10,12 @@ describe('#combineDateAndTime', () => {
 
     const result = combineDateAndTime(date, time)
 
-    const dateText = result.toLocaleDateString('tr-TR', { timeZone: 'Europe/Istanbul' })
-    const timeText = result.toLocaleTimeString('tr-TR', { timeZone: 'Europe/Istanbul' })
+    const dateText = result.toLocaleDateString('tr-TR', { timeZone: 'Europe/London' })
+    const timeText = result.toLocaleTimeString('tr-TR', { timeZone: 'Europe/London' })
 
     const actual = `${dateText} ${timeText}`
 
-    expect(actual).toBe('11.03.2021 11:11:00')
+    expect(actual).toBe('11.03.2021 08:11:00')
   })
 
   test('Should return type of Date', () => {
