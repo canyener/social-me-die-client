@@ -5,7 +5,6 @@ describe('#combineDateAndTime', () => {
   test('Should return correct combined date', () => {
 
     const date = new Date(2020, 9, 10, 9, 9)
-
     const time = new Date(2000, 1, 2, 12, 12);
 
     const result = combineDateAndTime(date, time)
