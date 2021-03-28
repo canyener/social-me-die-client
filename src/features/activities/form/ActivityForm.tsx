@@ -4,7 +4,7 @@ import { observer } from 'mobx-react-lite'
 import { RouteComponentProps } from 'react-router-dom'
 import { Form as FinalForm, Field } from 'react-final-form'
 
-import { IActivity } from '../../../app/models/activity'
+import { IActivityFormValues } from '../../../app/models/activity'
 
 import ActivityStore from '../../../app/stores/activityStore'
 
@@ -14,6 +14,7 @@ import SelectInput from '../../../app/common/form/SelectInput'
 import DateInput from '../../../app/common/form/DateInput'
 
 import { categories } from '../../../app/common/options/categoryOptions'
+import { combineDateAndTime } from '../../../app/common/util/util'
 
 interface DetailParams {
   id: string
@@ -29,18 +30,19 @@ const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({ match, hist
     clearActivity
   } = activityStore
 
-  const [activity, setActivity] = useState<IActivity>({
-    id: '',
+  const [activity, setActivity] = useState<IActivityFormValues>({
+    id: undefined,
     title: '',
     description: '',
     category: '',
     city: '',
     venue: '',
-    date: null
+    date: undefined,
+    time: undefined
   })
 
   useEffect(() => {
-    if (match.params.id && activity.id.length === 0) {
+    if (match.params.id && activity.id) {
       loadActivity(match.params.id).then(
         () => initialFormState && setActivity(initialFormState)
       )
@@ -49,7 +51,13 @@ const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({ match, hist
     return () => {
       clearActivity()
     }
-  }, [loadActivity, clearActivity, match.params.id, initialFormState, activity.id.length])
+  }, [
+    loadActivity,
+    clearActivity,
+    match.params.id,
+    initialFormState,
+    activity.id
+  ])
 
   // const handleSubmit = () => {
   //   if (activity.id.length === 0) {
@@ -64,7 +72,10 @@ const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({ match, hist
   // }
 
   const handleFinalFormSubmit = (values: any) => {
-    console.log(values)
+    const dateAndTime = combineDateAndTime(values.date, values.time)
+    const {date, time, ...activity} = values
+    activity.date = dateAndTime
+    console.log(activity)
   }
 
   return (
@@ -95,12 +106,23 @@ const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({ match, hist
                   value={activity.category}
                   component={SelectInput}
                 />
-                <Field
-                  name='date'
-                  placeholder='Date'
-                  value={activity.date}
-                  component={DateInput}
-                />
+                <Form.Group widths='equal'>
+                  <Field
+                    name='date'
+                    date={true}
+                    placeholder='Date'
+                    value={activity.date}
+                    component={DateInput}
+                  />
+                  <Field
+                    name='time'
+                    time={true}
+                    placeholder='Time'
+                    value={activity.date}
+                    component={DateInput}
+                  />
+                </Form.Group>
+
                 <Field
                   name='city'
                   placeholder='City'
