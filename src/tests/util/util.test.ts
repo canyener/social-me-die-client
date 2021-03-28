@@ -4,12 +4,16 @@ describe('#combineDateAndTime', () => {
 
   test('Should return correct combined date', () => {
 
-    const date = new Date(2020, 1, 11, 12, 12)
-    const time = new Date(2020, 11, 11, 10, 10)
+    const date = new Date(2020, 9, 10, 9, 9)
 
-    const actual = combineDateAndTime(date, time)
-    
-    expect(actual).toEqual(new Date('2020-02-11T07:10:00.000Z'))
+    const time = new Date(2000, 1, 2, 12, 12);
+
+    const result = combineDateAndTime(date, time)
+
+    const expected = '2020-10-10T12:12:00'
+    const actual = `${result.getFullYear()}-${result.getMonth() + 1}-${result.getDate()}T${result.getHours()}:${result.getMinutes()}:00`
+
+    expect(actual).toBe(expected)
   })
 
   test('Should return type of Date', () => {
