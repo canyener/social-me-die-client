@@ -44,7 +44,7 @@ exports[`Should render NavBar correctly 1`] = `
           }
         }
       />
-      Social Me Die
+      social-me-die
     </MenuItem>
     <MenuItem
       as={
