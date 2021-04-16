@@ -103,6 +103,6 @@
     "enzyme-adapter-react-16": "^1.15.6",
     "jest-enzyme": "^7.1.2",
     "timezone-mock": "^1.1.4",
-    "ts-jest": "^26.5.4"
+    "ts-jest": "^26.5.5"
   }
 }
