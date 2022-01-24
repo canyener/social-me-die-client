@@ -13,7 +13,7 @@
     "axios": "^0.21.2",
     "date-fns": "2.0.0-alpha.13",
     "final-form": "4.20.4",
-    "mobx": "^6.3.5",
+    "mobx": "^6.3.13",
     "mobx-react-lite": "^3.2.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
