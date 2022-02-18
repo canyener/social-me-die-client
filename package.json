@@ -14,7 +14,7 @@
     "date-fns": "2.0.0-alpha.13",
     "final-form": "4.20.4",
     "mobx": "^6.3.5",
-    "mobx-react-lite": "^3.2.1",
+    "mobx-react-lite": "^3.3.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-final-form": "6.5.7",
