@@ -10,7 +10,7 @@
     "@types/react-router-dom": "^5.3.1",
     "@types/react-widgets": "4.4.7",
     "@types/uuid": "^8.3.1",
-    "axios": "^0.21.2",
+    "axios": "^0.26.1",
     "date-fns": "2.0.0-alpha.13",
     "final-form": "4.20.4",
     "mobx": "^6.3.5",
