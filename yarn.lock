@@ -11035,10 +11035,10 @@ react-test-renderer@^16.0.0-0:
     react-is "^16.8.6"
     scheduler "^0.19.1"
 
-react-toastify@^8.0.3:
-  version "8.0.3"
-  resolved "https://registry.yarnpkg.com/react-toastify/-/react-toastify-8.0.3.tgz#7fbf65f69ec357aab8dd03c1496f9177aa92409a"
-  integrity sha512-rv3koC7f9lKKSkdpYgo/TGzgWlrB/aaiUInF1DyV7BpiM4kyTs+uhu6/r8XDMtBY2FOIHK+FlK3Iv7OzpA/tCA==
+react-toastify@^9.0.2:
+  version "9.0.2"
+  resolved "https://registry.yarnpkg.com/react-toastify/-/react-toastify-9.0.2.tgz#f7934b52ac30eb0c4de452920494b45d65957026"
+  integrity sha512-IknOvdh7LNzeLKmZTn7EXYC4kaSM0VdUvRuNdBJs/F/NMgRW9kFXbzAUb8rpQxIH+p1YJ3KVbfmL5ThCPH6o0A==
   dependencies:
     clsx "^1.1.1"
 
